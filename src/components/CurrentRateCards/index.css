@@ -1,0 +1,32 @@
+.currentCard-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.currentrate-card{
+    padding:2rem;
+    margin-top: 1.5rem;
+   height: 6rem;
+    background-size:auto;
+    background-position: top right ;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    color: #fff;
+}
+.currentrate-card span{
+    font-family: 'Outfit';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    color: #fff;
+    line-height: 20px;
+}
+.currentrate-card p{
+    font-family: 'Trap';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 20px;
+    margin-top: 2rem;
+}

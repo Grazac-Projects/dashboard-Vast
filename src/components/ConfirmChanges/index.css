@@ -1,0 +1,70 @@
+.confirm-changes-modalbox {
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.confirm-changes-box {
+  background-color: #fff;
+  flex-direction: column;
+  padding: 3rem 0rem;
+  height: 25rem;
+  width: 40rem;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  /* justify-content/: center; */
+}
+
+.confirm-changes-box span {
+  font-family: "Trap";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 150%;
+}
+.form-box {
+  /* background-color: red; */
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* text-align: center; */
+}
+.confirm-input {
+  background: #f4f4f6;
+
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #919191;
+  /* display: block; */
+  border-radius: 12px;
+  height: 5rem;
+  padding: 0rem 1rem;
+  font-family: "Outfit", sans-serif;
+}
+.submit-btn {
+  height: 6rem;
+  font-family: "Outfit", sans-serif;
+  background-color: black;
+  color: #fff;
+  width: 80%;
+  border-radius: 24px;
+  margin-top: 2rem;
+
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 132%;
+}

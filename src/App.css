@@ -1,0 +1,18 @@
+.App {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Trap-Medium", sans-serif;
+  --orange: #3484ED;
+  --blue: #292d9d;
+  --green: #299d3b;
+  --yellow: #cba00a;
+  --black: #050505;
+  --pink: #c12b2b;
+  --light-green: #2bc155;
+  --light-blue: #2570e0;
+  --dark-yellow: #c1972b;
+}
+

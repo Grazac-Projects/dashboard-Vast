@@ -1,0 +1,71 @@
+.dash-card-box {
+    margin-top: 1rem;
+   display: grid;
+   grid-template-columns:repeat(2, 1fr); 
+   grid-gap:10px;
+    padding: 1rem;
+}
+.cardd{
+  background-color: white;
+  display: flex;
+  position: relative;
+  padding-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+  height: 7rem;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.12);
+  transform: translate(0px);
+  transition: 1s all;
+  justify-content: space-between;
+}
+
+.black{
+  color: black !important;
+}
+.cardd:hover {
+  transform: translateY(5px);
+  box-shadow: 6px 6px 40px 10px lightgrey;
+}
+.dashcard-icon-box {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  border-radius: 50%;
+}
+.dashcard-icon-box img {
+  margin: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.right span {
+  font-family: "Trap";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 137.5%;
+}
+.left span {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: -0.04em;
+  color: #797979;
+  text-align: left;
+}
+.right p {
+  text-align: end;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 132%;
+  color: #969ba0;
+}

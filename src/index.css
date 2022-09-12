@@ -1,0 +1,35 @@
+
+@font-face {
+  font-family: "Trap-Black";
+  src: url("./fonts/Trap-Black.otf") format("otf");
+}
+@font-face {
+  font-family: "Trap-Bold";
+  src: url("./fonts/Trap-Bold.otf") format("otf");
+}
+@font-face {
+  font-family: "Trap-ExtraBold";
+  src: url("./fonts/Trap-ExtraBold.otf") format("otf");
+}
+@font-face {
+  font-family: "Trap-Light";
+  src: url("./fonts/Trap-Light.otf") format("otf");
+}
+@font-face {
+  font-family: "Trap-Medium";
+  src: url("./fonts/Trap-Medium.otf") format("otf");
+}
+@font-face {
+  font-family: "TrapSemiBold";
+  src: url("./fonts/Trap-SemiBold.otf") format("otf");
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}

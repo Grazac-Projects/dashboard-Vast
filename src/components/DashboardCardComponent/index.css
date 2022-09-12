@@ -1,0 +1,40 @@
+.Dashboard-card-box {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 1rem;
+}
+.left-cards-box {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.left-cards-box .heading {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 132%;
+  color: #575757;
+}
+.right-cards-box {
+  background-color: #ffff;
+  padding: 2rem;
+  border-radius: 10px;
+}
+.right-cards-heading-box {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-around;
+}
+.right-cards-heading-box span {
+  color: #575757;
+}
+.card-date {
+  font-family: "Outfit", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}

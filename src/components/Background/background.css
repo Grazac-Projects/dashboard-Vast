@@ -1,0 +1,33 @@
+.background {
+  background-color: rgba(255, 255, 255, 1);
+  width: 100%;
+  position: relative;
+  height: 5rem;
+}
+
+.Inner {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  gap: 9px;
+  right: 2rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+  line-height: 1px;
+  letter-spacing: -0.04em;
+}
+
+p {
+  font-family: "Outfit", sans-serif;
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 1px;
+  letter-spacing: 0em;
+  text-align: left;
+}

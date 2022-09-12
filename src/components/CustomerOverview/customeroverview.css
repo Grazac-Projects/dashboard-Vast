@@ -1,0 +1,152 @@
+.fullBox {
+  position: absolute;
+  top: 12rem;
+  background-color: #ffffff;
+  width: 78vw;
+  margin: auto;
+  height: 220px;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  right: 2.5rem;
+}
+
+span {
+  font-family: "Trap";
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #c8563c;
+}
+
+.filter {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.filterAccount {
+  color: #575757;
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  /* position: absolute; */
+  margin-left: 1rem;
+}
+.filterType {
+  position: absolute;
+  right: 1rem;
+  align-items: center;
+  text-align: center;
+  height: 2rem;
+  display: flex;
+  gap: 1rem;
+  margin: auto;
+  width: 13rem;
+  border: 1px solid #f4f4f6;
+  border-radius: 5px;
+  justify-content: center;
+  background-color: #f4f4f6;
+}
+
+.filterType p {
+  font-family: "Outfit";
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.box {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 10px;
+}
+
+.card {
+  height: 3rem;
+  background-color: white;
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  height: 160px;
+  align-items: center;
+  gap: 1rem;
+  width: 90%;
+  margin: auto;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.12);
+  transform: translate(0px);
+  transition: 1s all;
+}
+
+.card:hover {
+  transform: translateY(5px);
+}
+.color {
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+}
+
+.transaction_box {
+  position: absolute;
+  left: 1rem;
+  display: block;
+}
+
+.colorImg {
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  text-align: center;
+}
+
+.transaction_box1 {
+  text-align: right;
+  position: absolute;
+  right: 1rem;
+}
+
+.transaction_num5 {
+  font-family: "Outfit";
+  font-size: 15px;
+  font-weight: 200;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  width: 10px;
+}
+
+.transaction_num1 {
+  font-family: Trap;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: -0.04em;
+  text-align: right;
+}
+
+.transaction_num2,
+.transaction_num4 {
+  font-family: "Outfit";
+  font-size: 14px;
+  font-weight: 200;
+  line-height: 15px;
+  letter-spacing: 0em;
+  text-align: right;
+}
+
+.transaction_num3 {
+  font-family: "Trap";
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 10px;
+  letter-spacing: -0.04em;
+  text-align: right;
+}

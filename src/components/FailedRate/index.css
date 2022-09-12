@@ -1,0 +1,42 @@
+.failed-modal-box{
+    background-color: rgba(0, 0, 0, 0.9);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    margin: auto;
+    z-index: 1000;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.failed-content-box{
+background-color: #fff;
+  flex-direction: column;
+  padding: 3rem 0rem;
+  height: 30rem;
+  width: 40rem;
+  border-radius: 24px;
+  display: flex;
+  align-items: center; 
+}
+.failed-content-box span{
+    font-family: 'Trap';
+font-style: normal;
+font-weight: 800;
+font-size: 32px;
+line-height: 150%;
+margin-top: 3rem;
+}
+.submit-btn{
+    background: #1E1E1E;
+    border-radius: 24px;
+    font-family: 'Outfit', sans-serif;
+    color:#fff;
+    font-size: 20px;
+    font-weight: 500;
+    width: 80%;
+    height: 6rem;
+    margin-top: 4rem;
+}

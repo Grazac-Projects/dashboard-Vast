@@ -1,0 +1,16 @@
+.customer-list-table{
+    width:90rem;
+    background-color: #F9F9F9;
+    height:40rem;
+    padding: 1rem;
+
+
+}
+.customer-table-heading{
+    height:4rem;
+    border: none;
+    border-bottom: 1px solid #DBE3EE;
+    display: flex;
+    justify-content: space-between;
+    background-color: red;
+}
