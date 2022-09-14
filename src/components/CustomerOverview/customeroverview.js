@@ -1,33 +1,8 @@
 import React from "react";
-import icon3 from "../../assets/profile-2user.png";
+import { figures } from "../../assets/Data";
 import "../CustomerOverview/customeroverview";
 const customeroverview = () => {
-  const figures = [
-    {
-      id: 1,
-      icon: icon3,
-      number: "Total Users",
-      num6: 926,
-      num2: "4% (30 days)",
-      bg: "#4E75D9",
-    },
-    {
-      id: 2,
-      icon: icon3,
-      number: "Active Users",
-      num6: 920,
-      num2: "4% (30 days))",
-      bg: "#0ACB35",
-    },
-    {
-      id: 3,
-      icon: icon3,
-      number: "Inactive Users",
-      num6: 6,
-      num2: "4% (30 days)",
-      bg: "#CB0A0A",
-    },
-  ];
+  
   return (
     <div className="fullBox">
       <div className="filter">

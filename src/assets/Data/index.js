@@ -7,6 +7,11 @@ import startups from '../Data/status-up.png'
 import ornament1 from '../Data/Ornament.png'
 import ornament2 from '../Data/Ornament2.png'
 import ornament3 from '../Data/Ornament3.png'
+import picture from "../../assets/picture.png";
+import icon1 from "../../assets/moneys.png";
+import icon2 from "../../assets/status-up.png";
+import icon3 from "../../assets/card1.png";
+import icon4 from "../../assets/Vector1.png";
 
 export const dashCardData=[
     {
@@ -68,3 +73,148 @@ export const currentrateData =[
         pattern:ornament3
     }
 ]
+export const details = [
+    {
+      id: 1,
+      bgColor:'#292D9D',
+      h4: "Customer Information",
+      p: "Account Balance",
+      total: "$540.98",
+      profile_image: picture,
+      firstname: "Deborah",
+      pattern: ornament1,
+      lastname: "Dada",
+      phonenumber: "+234 807 3345 847",
+      email: "shalomayokunnu@gmail.com",
+      dob: "22-08-2000",
+      gender: "Female",
+      bvn: 12278403477,
+      nin: 88843934945,
+    },
+  ];
+
+  export  const figures = [
+    {
+      id: 1,
+      icon: icon1,
+      number: "Total Transaction",
+      num1: "₦60,540,926.0",
+      num2: "4% (30 days)",
+      num3: 260,
+      num4: "4% (30 days)",
+      bg: "#29439D",
+    },
+    {
+      id: 2,
+      icon: icon1,
+      number: "Successful Transaction",
+      num1: "₦60,540,926.0",
+      num2: "4% (30 days)",
+      num3: 260,
+      num4: "4% (30 days)",
+      bg: "#299D3B",
+    },
+    {
+      id: 3,
+      icon: icon1,
+      number: "Pending Transaction",
+      num1: "₦60,540,926.0",
+      num2: "4% (30 days)",
+      num3: 260,
+      num4: "4% (30 days)",
+      bg: "#9D9129",
+    },
+    {
+      id: 4,
+      icon: icon1,
+      number: "Failed Transaction",
+      num1: "₦60,540,926.0",
+      num2: "4% (30 days)",
+      num3: 260,
+      num4: "4% (30 days)",
+      bg: "#9D2929",
+    },
+    {
+      id: 5,
+      icon: icon2,
+      number: "Revenue",
+      num1: "₦540,926.0",
+      num2: "4% (30 days)",
+      bg: "#B00ACB",
+    },
+  ];
+
+  export const figurescard = [
+    {
+      id: 1,
+      icon: icon3,
+      number: "Total Cards",
+      num6: 926,
+      num2: "4% (30 days)",
+      bg: "#4E75D9",
+    },
+    {
+      id: 2,
+      icon: icon3,
+      number: "Active Cards",
+      num6: 920,
+      num2: "4% (30 days))",
+      bg: "#0ACB35",
+    },
+    {
+      id: 3,
+      icon: icon3,
+      number: "Inactive Cards",
+      num6: 6,
+      num2: "4% (30 days)",
+      bg: "#CB0A0A",
+    },
+  ];
+
+  export const figurescard1 = [
+    {
+      id: 1,
+      icon: icon3,
+      number: "Total Cards",
+      num6: 3,
+      bg: "#4E75D9",
+    },
+    {
+      id: 2,
+      icon: icon3,
+      number: "Active Cards",
+      num6: 2,
+      bg: "#0ACB35",
+    },
+    {
+      id: 3,
+      icon: icon3,
+      number: "Inactive Cards",
+      num6: 1,
+      bg: "#CB0A0A",
+    },
+  ];
+
+  export const figurescard2 = [
+    {
+      id: 1,
+      icon: icon4,
+      number: "Transactions Processaed",
+      num6: "$392",
+      bg: "#4E75D9",
+    },
+    {
+      id: 2,
+      icon: icon4,
+      number: "Money In",
+      num6: "$348",
+      bg: "#0ACB35",
+    },
+    {
+      id: 3,
+      icon: icon4,
+      number: "Money Out",
+      num6: "$48",
+      bg: "#CB0A0A",
+    },
+  ];
