@@ -1,12 +1,13 @@
 .fullBox {
   background-color: #ffffff;
+  /* background-color: purple; */
   width: 78vw;
   margin: auto;
   height: fit-content;
   border-radius: 10px;
   justify-content: center;
   align-items: center;
-  /* right: 2.5rem; */
+ 
   padding-bottom: 2rem;
 }
 

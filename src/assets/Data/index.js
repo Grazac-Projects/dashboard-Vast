@@ -19,7 +19,7 @@ export const dashCardData=[
         title:"Total Users",
         value:"260",
         text:"4% (30 days)",
-        bg:'#C8563C'
+        bg:'#3484ED'
     },
     {
         icon:wallet,
@@ -73,6 +73,81 @@ export const currentrateData =[
         pattern:ornament3
     }
 ]
+<<<<<<< HEAD
+=======
+
+
+export const CustomerListTable= [
+    {
+      serialNo:'1',
+      cardid:'ID1fc189b0',
+      cardnumber:'**** **** **** 3465',
+      user:'Adeola Brown',
+      phonenumber:'08131977989',
+      balance:'$1,500',
+      status:"status",
+      datecreated:'10-11-2019'
+
+        
+
+    },
+    {
+        serialNo:'2',
+        cardid:'ID1fc189b0',
+        cardnumber:'**** **** **** 3465',
+        user:'Adeola Brown',
+        phonenumber:'08131977989',
+        balance:'$1,500',
+        status:"status",
+        datecreated:'10-11-2019'
+  
+          
+  
+      },
+      {
+        serialNo:'3',
+        cardid:'ID1fc189b0',
+        cardnumber:'**** **** **** 3465',
+        user:'Adeola Brown',
+        phonenumber:'08131977989',
+        balance:'$1,500',
+        status:"status",
+        datecreated:'10-11-2019'
+  
+          
+  
+      },
+      {
+        serialNo:'3',
+        cardid:'ID1fc189b0',
+        cardnumber:'**** **** **** 3465',
+        user:'Adeola Brown',
+        phonenumber:'08131977989',
+        balance:'$1,500',
+        status:"status",
+        datecreated:'10-11-2019'
+  
+          
+  
+      },
+      {
+        serialNo:'3',
+        cardid:'ID1fc189b0',
+        cardnumber:'**** **** **** 3465',
+        user:'Adeola Brown',
+        phonenumber:'08131977989',
+        balance:'$1,500',
+        status:"status",
+        datecreated:'10-11-2019'
+  
+          
+  
+      },
+
+      
+    
+]
+>>>>>>> 89567cccdf93eaf5d0522c07dcf40f73a4556408
 export const details = [
     {
       id: 1,
@@ -217,4 +292,8 @@ export const details = [
       num6: "$48",
       bg: "#CB0A0A",
     },
+<<<<<<< HEAD
   ];
+=======
+  ];
+>>>>>>> 89567cccdf93eaf5d0522c07dcf40f73a4556408

@@ -1,11 +1,22 @@
 .Dashboard-card-box {
+  background-color: #F9F9F9;
   display: flex;
-  gap: 1rem;
-  padding: 1rem 1rem;
+  flex-direction: row;
+  gap:.8rem;
+  /* background-color: purple; */
+  width: 78vw;
+  /* padding:0rem 2rem; */
+  /* justify-content: space-between; */
+  margin: auto;
+  height: fit-content;
+  /* align-items: center; */
+  padding-bottom: 2rem;
 }
 .left-cards-box {
   background-color: white;
-  padding: 1rem;
+  /* background-color: blue; */
+  padding:  1rem;
+  width: 67%;
   border-radius: 10px;
 }
 .left-cards-box .heading {
@@ -20,6 +31,8 @@
   background-color: #ffff;
   padding: 2rem;
   border-radius: 10px;
+  width: 33%;
+  /* background-color: aquamarine; */
 }
 .right-cards-heading-box {
   display: flex;
@@ -38,3 +51,4 @@
   font-size: 14px;
   line-height: 20px;
 }
+

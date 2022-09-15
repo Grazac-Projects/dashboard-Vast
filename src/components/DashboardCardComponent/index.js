@@ -12,7 +12,7 @@ const DashboardCardComponent= () => {
       <div className='left-cards-box'>
         <span className="heading">Business Overview</span>
         <CardComponent />
-        {/* <GridExample /> */}
+       
        
       </div>
       <div className='right-cards-box'>
