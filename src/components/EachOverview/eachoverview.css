@@ -12,6 +12,7 @@ h2 {
   line-height: 2px;
   letter-spacing: -0.04em;
   text-align: left;
+  cursor: pointer;
 }
 
 .over {

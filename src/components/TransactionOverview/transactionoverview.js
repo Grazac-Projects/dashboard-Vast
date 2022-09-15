@@ -1,59 +1,8 @@
 import React from "react";
-import icon1 from "../../assets/moneys.png";
-import icon2 from "../../assets/status-up.png";
 import arrow from "../../assets/arrow.svg";
+import { figures } from "../../assets/Data";
 import "./transactionoverview.css";
 const transactionoverview = () => {
-  const figures = [
-    {
-      id: 1,
-      icon: icon1,
-      number: "Total Transaction",
-      num1: "₦60,540,926.0",
-      num2: "4% (30 days)",
-      num3: 260,
-      num4: "4% (30 days)",
-      bg: "#29439D",
-    },
-    {
-      id: 2,
-      icon: icon1,
-      number: "Successful Transaction",
-      num1: "₦60,540,926.0",
-      num2: "4% (30 days)",
-      num3: 260,
-      num4: "4% (30 days)",
-      bg: "#299D3B",
-    },
-    {
-      id: 3,
-      icon: icon1,
-      number: "Pending Transaction",
-      num1: "₦60,540,926.0",
-      num2: "4% (30 days)",
-      num3: 260,
-      num4: "4% (30 days)",
-      bg: "#9D9129",
-    },
-    {
-      id: 4,
-      icon: icon1,
-      number: "Failed Transaction",
-      num1: "₦60,540,926.0",
-      num2: "4% (30 days)",
-      num3: 260,
-      num4: "4% (30 days)",
-      bg: "#9D2929",
-    },
-    {
-      id: 5,
-      icon: icon2,
-      number: "Revenue",
-      num1: "₦540,926.0",
-      num2: "4% (30 days)",
-      bg: "#B00ACB",
-    },
-  ];
   return (
     <div className="fullBox">
       <div className="filter">

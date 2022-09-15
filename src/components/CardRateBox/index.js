@@ -9,9 +9,6 @@ const CardRateBox = () => {
     const [modalShow, setModalShow] =useState(false);
     const handleclick=()=>{
       setModalShow(true);
-  
-      
-      
     }
   return (
     <>

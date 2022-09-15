@@ -1,3 +1,4 @@
+import { figurescard } from "../../assets/Data";
 import React from "react";
 import icon3 from "../../assets/card1.png";
 import CustomerList from "../CustomerList";
@@ -5,8 +6,8 @@ import CustomerListHeading from "../CustomerListHeading";
 import CustomerListTableComponent from "../CustomerListTableComponent";
 import "../CustomerOverview/customeroverview";
 
-const cardsoverview = () => {
-  const figures = [
+const cardsoverview = ({heading}) => {
+    const figures = [
     {
       id: 1,
       icon: icon3,
@@ -32,17 +33,20 @@ const cardsoverview = () => {
       bg: "#CB0A0A",
     },
   ];
+// import "../CustomerOverview/customeroverview";
+// const cardsoverview = ({heading}) => {
+ 
   return (
     <>
     <div className="fullBox">
       <div className="filter">
         <p className="filterAccount">
-          Cards Overview
+        {heading}
         </p>
       </div>
 
       <div className="box">
-        {figures.map((figure) => {
+        {figurescard.map((figure) => {
           return (
             <div className="card" key={figure.id}>
               <div className="transaction_box">
