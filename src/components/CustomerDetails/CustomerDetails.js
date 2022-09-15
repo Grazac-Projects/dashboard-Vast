@@ -28,7 +28,7 @@ const CustomerDetails = () => {
                   </div>
                   <div>
                     <h6>Phone Number</h6>
-                    <p>{detail.phonenumber}</p>
+                    <p>{detail.phonenumberss}</p>
                   </div>
                   <div >
                     <h6>Email</h6>

@@ -1,17 +1,8 @@
 import React from "react";
-<<<<<<< HEAD
 import { figures } from "../../assets/Data";
 import "../CustomerOverview/customeroverview";
 const customeroverview = () => {
   
-=======
-import icon3 from "../../assets/profile-2user.png";
-import CustomerList from "../CustomerList";
-import CustomerListHeading from "../CustomerListHeading";
-import { figures } from "../../assets/Data";
-import "../CustomerOverview/customeroverview";
-const customeroverview = () => {
->>>>>>> 89567cccdf93eaf5d0522c07dcf40f73a4556408
   return (
     <>
       <div className='fullBox'>
@@ -39,7 +30,6 @@ const customeroverview = () => {
         </div>
       </div>
 
-      <CustomerListHeading />
     </>
   );
 };

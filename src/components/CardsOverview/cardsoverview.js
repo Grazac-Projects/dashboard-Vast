@@ -1,46 +1,7 @@
 import { figurescard } from "../../assets/Data";
 import React from "react";
-<<<<<<< HEAD
 import "../CustomerOverview/customeroverview";
-import { figurescard } from "../../assets/Data";
 const cardsoverview = ({heading}) => {
-=======
-import icon3 from "../../assets/card1.png";
-import CustomerList from "../CustomerList";
-import CustomerListHeading from "../CustomerListHeading";
-import CustomerListTableComponent from "../CustomerListTableComponent";
-import "../CustomerOverview/customeroverview";
-
-const cardsoverview = ({heading}) => {
-    const figures = [
-    {
-      id: 1,
-      icon: icon3,
-      number: "Total Cards",
-      num6: 926,
-      num2: "4% (30 days)",
-      bg: "#4E75D9",
-    },
-    {
-      id: 2,
-      icon: icon3,
-      number: "Active Cards",
-      num6: 920,
-      num2: "4% (30 days))",
-      bg: "#0ACB35",
-    },
-    {
-      id: 3,
-      icon: icon3,
-      number: "Inactive Cards",
-      num6: 6,
-      num2: "4% (30 days)",
-      bg: "#CB0A0A",
-    },
-  ];
-// import "../CustomerOverview/customeroverview";
-// const cardsoverview = ({heading}) => {
->>>>>>> 89567cccdf93eaf5d0522c07dcf40f73a4556408
  
   return (
     <>
@@ -70,8 +31,6 @@ const cardsoverview = ({heading}) => {
         })}
       </div>
     </div>
-    <CustomerListHeading />
-    <CustomerListTableComponent />
     {/* <CustomerList /> */}
     </>  
   );

@@ -8,7 +8,7 @@ import Transaction from "../src/pages/Transaction/transaction";
 import Customers from "../src/pages/Customers/customer";
 import Cards from "../src/pages/Cards/cards";
 import Analytics from "../src/pages/Analytics/analytics";
-import CustomerViewALLList from "./pages/CustomerViewALLList";
+// import CustomerViewALLList from "./pages/CustomerViewALLList";
 // import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 function App() {
   return (
@@ -22,7 +22,7 @@ function App() {
             <Route path="/customers" element={<Customers />} />
             <Route path="/cards" element={<Cards />} />
             <Route path="/analytics" element={<Analytics />} />
-            <Route path="/customerViewAll" element={<CustomerViewALLList />} />
+            {/* <Route path="/customerViewAll" element={<CustomerViewALLList />} /> */}
           </Routes>
         </Sidebar>
       </BrowserRouter>

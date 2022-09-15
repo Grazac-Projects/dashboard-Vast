@@ -2,8 +2,10 @@ import React from "react";
 import { useState } from "react";
 import CustomerDetails from "../../components/CustomerDetails/CustomerDetails";
 import Background from "../../components/Background/background";
+import ListHeader from "../../components/ListHeader/ListHeader";
 import EachOverview from "../../components/EachOverview/eachoverview";
 import CustomerOverview from "../../components/CustomerOverview/customeroverview";
+import CustomerListTable2 from "../../components/CustomerListTable2";
 const Customer = () => {
   const [isOverview, setIsOverview] = useState(false);
 
@@ -11,7 +13,6 @@ const Customer = () => {
     <div>
       <Background />
       <EachOverview
-        // handleClick={() => setIsOverview(!isOverview)}
         props="Customer"
         text="Customer Overview"
         setIsOverview={setIsOverview}
@@ -19,8 +20,9 @@ const Customer = () => {
       />
       {isOverview && <CustomerDetails />}
       {!isOverview && <CustomerOverview />}
-      {/* <CustomerOverview /> */}
-      {/* <Form initialName="" /> */}
+
+      <ListHeader listType="Customers List" />
+      <CustomerListTable2 />
     </div>
   );
 };

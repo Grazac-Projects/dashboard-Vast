@@ -9,7 +9,6 @@ const CustomerViewALLList = () => {
     <div>
       
       <Background/>
-
       <EachOverview props='Customer' text='Customer Overview'/>
       <CustomerViewALL />
     </div>

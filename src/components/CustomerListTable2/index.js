@@ -1,20 +1,36 @@
 import './index.css'
 import React from 'react'
-
+import { CustomerListTable1 } from '../../assets/Data'
 const CustomerListTable2 = () => {
   return (
-    <div>
-         <table>
+    <div className='customer-list-table'>
+        <table>
           <tr>
             <th>#</th>
+            <th>Customer Details</th>
             <th>Phone Number</th>
             <th>Email Address</th>
             <th>Status</th>
             <th>Date</th>
-            
           </tr>
-          </table>
-    </div>
+          {CustomerListTable1.map((item, index) => {
+            return (
+              <tr>
+                <td>{item.id}</td>
+                <td className='identities'><img src = {item.identity} alt= ''/> {item.customer}</td>
+                <td>{item.number}</td>
+                <td>{item.email} </td>
+                <td>
+                  <button className='table-btn1 table-btn2'>
+                    {item.status}
+                  </button>{" "}
+                </td>
+                <td>{item.date} </td>
+              </tr>
+            );
+          })}
+        </table>
+      </div>
   )
 }
 
