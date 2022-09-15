@@ -1,0 +1,68 @@
+.customer-listall-heading input {
+  width: 290px;
+  background: #f4f4f6;
+  border-radius: 12px;
+  padding: 1rem;
+  position: relative;
+  color: rgba(0, 0, 0, 0.35);
+}
+.customer-listall-heading {
+    background-color: #fff;
+
+    padding: 0rem 1rem;
+    border-bottom: 1px solid #DBE3EE;
+   
+    align-items: center;
+   
+    display: flex;
+    justify-content: space-between;
+  }
+ 
+  .customerlist-para p{
+    color: #2c2c2c;
+    font-family: "Trap";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 150%;
+   
+    
+  }
+  .customer-heading-items{
+   
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-end;
+  }
+.search-icon {
+  position: absolute;
+  right:38rem;
+  top:15.2rem;
+  color: rgba(0, 0, 0, 0.35);
+}
+.fiter-box {
+  background-color: #f4f4f6;
+  width: 190px;
+  display: flex;
+  align-items: center;
+  margin-left:1rem;
+  padding: 1rem;
+  border-radius: 12px;
+ 
+  justify-content: space-between;
+}
+.fiter-box span {
+  color: rgba(0, 0, 0, 0.35);
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+}
+.customer-heading-main-all {
+    /* background-color: red; */
+    padding: 0rem 3.8rem;
+      width: 78vw;
+    margin-top: 3rem;
+  }

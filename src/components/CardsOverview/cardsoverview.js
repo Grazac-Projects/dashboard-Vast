@@ -1,6 +1,10 @@
 import React from "react";
 import icon3 from "../../assets/card1.png";
+import CustomerList from "../CustomerList";
+import CustomerListHeading from "../CustomerListHeading";
+import CustomerListTableComponent from "../CustomerListTableComponent";
 import "../CustomerOverview/customeroverview";
+
 const cardsoverview = () => {
   const figures = [
     {
@@ -29,6 +33,7 @@ const cardsoverview = () => {
     },
   ];
   return (
+    <>
     <div className="fullBox">
       <div className="filter">
         <p className="filterAccount">
@@ -55,7 +60,12 @@ const cardsoverview = () => {
         })}
       </div>
     </div>
+    <CustomerListHeading />
+    <CustomerListTableComponent />
+    {/* <CustomerList /> */}
+    </>  
   );
+ 
 };
 
 export default cardsoverview;

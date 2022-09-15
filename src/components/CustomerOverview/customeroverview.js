@@ -1,5 +1,7 @@
 import React from "react";
 import icon3 from "../../assets/profile-2user.png";
+import CustomerList from "../CustomerList";
+import CustomerListHeading from "../CustomerListHeading";
 import "../CustomerOverview/customeroverview";
 const customeroverview = () => {
   const figures = [
@@ -29,7 +31,8 @@ const customeroverview = () => {
     },
   ];
   return (
-    <div className="fullBox">
+    <>
+      <div className="fullBox">
       <div className="filter">
         <p className="filterAccount">
           User Overview
@@ -55,6 +58,10 @@ const customeroverview = () => {
         })}
       </div>
     </div>
+
+         <CustomerListHeading/>
+    
+    </>
   );
 };
 

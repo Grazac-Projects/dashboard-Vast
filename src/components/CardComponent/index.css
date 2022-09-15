@@ -1,9 +1,11 @@
 .dash-card-box {
     margin-top: 1rem;
    display: grid;
-   grid-template-columns:repeat(2, 1fr); 
+   grid-template-columns:repeat(2, 1fr);
+   /* background-color: orange;  */
    grid-gap:10px;
-    padding: 1rem;
+    /* padding: 1rem; */
+    /* width: 78vw; */
 }
 .cardd{
   background-color: white;
@@ -12,7 +14,7 @@
   padding-right: 10px;
   padding-left: 10px;
   cursor: pointer;
-  height: 7rem;
+  height: 8rem;
   align-items: center;
   width: 90%;
   margin: auto;
@@ -69,3 +71,4 @@
   line-height: 132%;
   color: #969ba0;
 }
+
