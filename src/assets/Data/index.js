@@ -145,7 +145,6 @@ export const Rows = [
     date: "10-11-2019",
     time: "10:45 AM",
     color: "#2570E0",
-    height: "1rem",
   },
   {
     id: 2,
@@ -159,8 +158,6 @@ export const Rows = [
     amount: "$1,500",
     position: "left",
     color1: "#EBF0FF",
-    height: "1rem",
-
     service: "$15",
     status: "success",
     date: "10-11-2019",
@@ -171,7 +168,6 @@ export const Rows = [
   {
     id: 3,
     txnid: "ID1fc189b0",
-    height: "1px",
     shape: "1px solid transparent",
     details: "Subscription Card",
     bank: "ID123364774",
@@ -185,8 +181,6 @@ export const Rows = [
     date: "10-11-2019",
     color: "#2570E0",
     position: "left",
-    height: "1rem",
-
     color1: "#EBF0FF",
     time: "10:45 AM  ",
   },
@@ -203,8 +197,6 @@ export const Rows = [
     amount: "$1,500",
     service: "-",
     color: "#2570E0",
-    height: "1rem",
-
     position: "left",
     color1: "#EBF0FF",
     status: "success",
@@ -225,8 +217,6 @@ export const Rows = [
     amount: "$1,500",
     service: "-",
     color: "#2570E0",
-    height: "1rem",
-
     status: "success",
     date: "10-11-2019",
     time: "10:45 AM  ",
@@ -246,7 +236,6 @@ export const Rows = [
     service: "-",
     color: "#2570E0",
     status: "success",
-    height: "1rem",
     date: "10-11-2019",
     time: "10:45 AM  ",
     color1: "#EBF0FF",
@@ -261,7 +250,6 @@ export const Rows = [
     type: "Card Funding",
     user: "Adeola Brown",
     color: "#2570E0",
-    height: "1rem",
     phonenumbers: "08131977989",
     amount: "$1,500",
     service: "$15",
@@ -286,7 +274,6 @@ export const Rows = [
     service: "$3",
     color1: "#EBF0FF",
     status: "success",
-    height: "1rem",
     shape: "1px solid transparent",
     date: "10-11-2019",
     position: "left",
