@@ -26,7 +26,7 @@ const Table = () => {
               <td>
                 {item.details} <p>{item.bank}</p>
               </td>
-              <td style={{ color: item.color, height: item.height, border: item.shape}}>{item.category} </td>
+              <td style={{ color: item.color, border: item.shape}}>{item.category} </td>
               <td style={{ color: item.color}}>{item.type} </td>
               <td>
                 {item.user} <p>{item.phonenumbers}</p>
