@@ -4,6 +4,7 @@ import CustomerList from "../CustomerList";
 import CustomerListHeading from "../CustomerListHeading";
 import { figures } from "../../assets/Data";
 import "../CustomerOverview/customeroverview";
+import CustomerListTable2 from "../CustomerListTable2";
 const customeroverview = () => {
   return (
     <>
@@ -33,6 +34,7 @@ const customeroverview = () => {
       </div>
 
       <CustomerListHeading />
+      <CustomerListTable2 />
     </>
   );
 };

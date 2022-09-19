@@ -1,9 +1,10 @@
 import './index.css'
-import React from 'react'
+import React from 'react';
+import { customerListTwo } from '../../assets/Data';
 
 const CustomerListTable2 = () => {
   return (
-    <div>
+    <div className='customer-list-table'>
          <table>
           <tr>
             <th>#</th>
@@ -13,6 +14,17 @@ const CustomerListTable2 = () => {
             <th>Date</th>
             
           </tr>
+          {customerListTwo.map((index, item)=>{
+            return(
+              <tr>
+                <td>hello</td>
+                <td>{item.phoneNumber}</td>
+                <td>{item.emailAddress}</td>
+                <td>{item.status}</td>
+                <td>{item.date}</td>
+              </tr>
+            )
+          })}
           </table>
     </div>
   )
