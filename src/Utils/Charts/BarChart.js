@@ -1,18 +1,20 @@
 import React, { useState, useEffect } from 'react'
-import chart from 'chart.js' 
 import {
+    Chart as ChartJS,
   
-    Chart as ChartJS, 
-  BarElement,
-
-} from 'chart.js';
-
-import { Bar } from 'react-chartjs-2';
-
-ChartJS.register(
-  BarElement,
-);
-
+    BarElement, CategoryScale,
+    LinearScale,
+  
+  } from 'chart.js';
+  
+  import { Bar } from 'react-chartjs-2';
+  
+  ChartJS.register(
+    CategoryScale,
+    LinearScale,
+    BarElement,
+  );
+  
 
 const BarChart = () => {
   const [chart, setChart] = useState({})
@@ -47,10 +49,10 @@ const BarChart = () => {
 
 //   console.log("chart", chart);
   var data = {
-    labels: chart?.coins?.map(x => x.name),
+    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
     datasets: [{
-      label: `${chart?.coins?.length} Coins Available`,
-      data: chart?.coins?.map(x => x.price),
+        label: '# of Votes',
+        data: [12, 19, 3, 5, 2, 3],
       backgroundColor: [
         'rgba(255, 99, 132, 0.2)',
         'rgba(54, 162, 235, 0.2)',
