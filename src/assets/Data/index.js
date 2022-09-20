@@ -334,6 +334,38 @@ export const CustomerListTable = [
   },
 ];
 
+ export const customerListTwo =[
+  {
+    indexNo:'#',
+    phoneNumber:'08131977989',
+    emailAddress:'fetteuq@gamil.com',
+    status:'status',
+    date:'10-11-2019'
+  },
+  {
+    indexNo:'1',
+    phoneNumber:'08131977989',
+    emailAddress:'fetteuq@gamil.com',
+    status:'status',
+    date:'10-11-2019'
+  },
+  {
+    indexNo:'2',
+    phoneNumber:'08131977989',
+    emailAddress:'fetteuq@gamil.com',
+    status:'status',
+    date:'10-11-2019'
+  },
+  {
+    indexNo:'3',
+    phoneNumber:'08131977989',
+    emailAddress:'fetteuq@gamil.com',
+    status:'status',
+    date:'10-11-2019'
+  }
+ ]
+
+
 export const currentrateData = [
   {
     bgColor: "#292D9D",
@@ -354,6 +386,7 @@ export const currentrateData = [
     pattern: ornament3,
   },
 ];
+
 export const details = [
   {
     id: 1,

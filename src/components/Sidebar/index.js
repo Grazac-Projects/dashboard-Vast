@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/vast.png";
+import logo from "../../assets/logo.png";
 import dashboard from "../../assets/Layer 2 (1).svg";
 import transaction from "../../assets/Layer 2.svg";
 import customers from "../../assets/Group (1).svg";
