@@ -20,7 +20,6 @@
   border-radius: 24px;
   display: flex;
   align-items: center;
-  /* justify-content/: center; */
 }
 
 .confirm-changes-box span {
@@ -31,13 +30,10 @@
   line-height: 150%;
 }
 .form-box {
-  /* background-color: red; */
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
-  /* text-align: center; */
 }
 .confirm-input {
   background: #f4f4f6;
@@ -46,9 +42,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
-
   color: #919191;
-  /* display: block; */
   border-radius: 12px;
   height: 5rem;
   padding: 0rem 1rem;

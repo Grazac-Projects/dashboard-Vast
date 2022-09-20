@@ -1,5 +1,4 @@
 .customer-heading-main {
-  /* background-color: red; */
   padding: 0rem 3.8rem;
   width: 78vw;
   margin-top: 3rem;
@@ -7,9 +6,7 @@
 .customer-btn {
   width: 6rem;
   padding: 0.5rem;
-  /* height: 2rem; */
   background-color: #f1f1f1;
-  /* border: 1px solid black !important; */
   cursor: pointer;
   color: #424242 !important;
   border: none;
@@ -23,11 +20,9 @@
 }
 .customer-list-heading {
   background-color: #fff;
-  /* background-color: #c12b2b; */
   padding: 0rem 1rem;
   border-bottom: 1px solid #dbe3ee;
   align-items: center;
-  /* width: 77vw; */
   display: flex;
   justify-content: space-between;
 }
@@ -86,7 +81,7 @@ td {
 
 th {
   padding: 16px;
-  font-family: 'Trap';
+  font-family: "Trap";
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
