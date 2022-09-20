@@ -39,7 +39,7 @@ main {
   background-color: white;
   color: black;
   transition: all 0.5s;
-  border: 1px solid white;
+  /* border: 1px solid white; */
   border-radius: 10px 10px 0 0;
   background-color: white;
   outline: black;

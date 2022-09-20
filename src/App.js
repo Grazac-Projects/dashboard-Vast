@@ -8,8 +8,11 @@ import Transaction from "../src/pages/Transaction/transaction";
 import Customers from "../src/pages/Customers/customer";
 import Cards from "../src/pages/Cards/cards";
 import Analytics from "../src/pages/Analytics/analytics";
-// import CustomerViewALLList from "./pages/CustomerViewALLList";
-// import { TooltipComponent } from '@syncfusion/ej2-react-popups'
+// import CustomerViewAllList from "./pages/CardViewALLList";
+import TransactionViewALL from "./pages/TransactionViewALL";
+import CardViewALLList from "./pages/CardViewALLList";
+import CustomerViewAllPage from "./pages/CustomerViewAllPage";
+
 function App() {
   return (
     <div className="App">
@@ -22,7 +25,9 @@ function App() {
             <Route path="/customers" element={<Customers />} />
             <Route path="/cards" element={<Cards />} />
             <Route path="/analytics" element={<Analytics />} />
-            {/* <Route path="/customerViewAll" element={<CustomerViewALLList />} /> */}
+            <Route path="/cardViewAll" element={<CardViewALLList />} />
+            <Route path="/transactionViewAll" element={<TransactionViewALL />} />
+            <Route path="/customerViewAll" element={<CustomerViewAllPage />} />
           </Routes>
         </Sidebar>
       </BrowserRouter>

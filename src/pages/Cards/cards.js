@@ -4,13 +4,14 @@ import CustomerListTableComponent from "../../components/CustomerListTableCompon
 import EachOverview from "../../components/EachOverview/eachoverview";
 import CardsOverview from "../../components/CardsOverview/cardsoverview";
 import ListHeader from "../../components/ListHeader/ListHeader";
+import { Link } from "react-router-dom";
 const cards = () => {
   return (
     <div>
       <Background />
       <EachOverview props="Cards" text="Cards Overview" />
       <CardsOverview />
-      <ListHeader listType="Customers List" />
+      <ListHeader listType='Cards List' link= {<Link to="/cardViewAll" >View All</Link>}/>
       <CustomerListTableComponent />
     </div>
   );

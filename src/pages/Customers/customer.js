@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import CustomerDetails from "../../components/CustomerDetails/CustomerDetails";
 import Background from "../../components/Background/background";
 import ListHeader from "../../components/ListHeader/ListHeader";
@@ -21,8 +22,8 @@ const Customer = () => {
       {isOverview && <CustomerDetails />}
       {!isOverview && <CustomerOverview />}
 
-      <ListHeader listType="Customers List" />
-      <CustomerListTable2 />
+      <ListHeader listType='Customer List' link= {<Link to="/customerViewAll" >View All</Link>} />
+      <CustomerListTable2  />
     </div>
   );
 };

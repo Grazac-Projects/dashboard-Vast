@@ -1,12 +1,15 @@
 import React from "react";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 import "./ListHeader.css";
-const ListHeader = ({ listType }) => {
+const ListHeader = ({ listType, link }) => {
   return (
-    <div className="listheader">
-      <h3 className="listeach">{listType}</h3>
-      <Link to ='/customerViewAll'className="customer-btn">View All</Link>
+    <div className='listheader'>
+      <h3 className='listeach'>{listType}</h3>
+      <p  className='view'>{link}</p>
+      {/* <Link to={pathname}>
+        view All
+      </Link> */}
     </div>
   );
 };
