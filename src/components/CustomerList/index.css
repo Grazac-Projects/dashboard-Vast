@@ -24,11 +24,9 @@
 }
 .customer-list-heading {
   background-color: #fff;
-  /* background-color: #c12b2b; */
   padding: 0rem 1rem;
   border-bottom: 1px solid #DBE3EE;
   align-items: center;
-  /* width: 77vw; */
   display: flex;
   justify-content: space-between;
 }
@@ -42,10 +40,7 @@
   
 }
 .customer-list-table {
-  /* margin-top: 4rem; */
   padding: 0rem 4rem;
-  /* height:40rem; */
-  /* padding: 1rem; */
 }
 .table-btn1 {
   background: #2570e0;

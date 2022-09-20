@@ -6,8 +6,6 @@
   flex-direction: row;
   justify-content: space-between;
   padding: 1.5rem 1rem;
-  /* width: 16rem; */
-  /* height: 8rem; */
 }
 .rate-value-box span {
   font-family: "Outfit";

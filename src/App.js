@@ -1,16 +1,18 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
+import React, { useState } from "react";
 import "./App.css";
-import Sidebar from "./components/Sidebar";
+import Sidebar from "../src/components/Sidebar";
 import Dashboard from "../src/pages/Dashboard/dashboard";
-// import Background from "./components/Background/background";
 import Transaction from "../src/pages/Transaction/transaction";
 import Customers from "../src/pages/Customers/customer";
 import Cards from "../src/pages/Cards/cards";
 import Analytics from "../src/pages/Analytics/analytics";
-import CustomerViewALLList from "./pages/CustomerViewALLList";
-// import { TooltipComponent } from '@syncfusion/ej2-react-popups'
+import LogIn from "../src/pages/LogIn/login";
 function App() {
+  const [userToken, setUserToken] = useState(true);
+  if (userToken === true) {
+    return <LogIn setUserToken={setUserToken} />;
+  }
   return (
     <div className="App">
       <BrowserRouter>
@@ -22,10 +24,9 @@ function App() {
             <Route path="/customers" element={<Customers />} />
             <Route path="/cards" element={<Cards />} />
             <Route path="/analytics" element={<Analytics />} />
-            <Route path="/customerViewAll" element={<CustomerViewALLList />} />
           </Routes>
         </Sidebar>
-      </BrowserRouter>
+      </BrowserRouter>{" "}
     </div>
   );
 }

@@ -3,60 +3,60 @@
   width: 78vw;
   margin: auto;
   justify-content: center;
-  /* align-items: center; */
   gap: 1rem;
+  padding-top: 0;
 }
 
 .details2 {
   border: 1px solid transparent;
   display: block;
-  height: 32rem;
-  width: 22vw;
-  padding: 0;
   border-radius: 10px;
-  border: 1px solid transparent;
-  box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.12);
+  box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.12) !important;
   transform: translate(0px);
   transition: 1s all;
   background-color: white;
-  
+  cursor: pointer;
+  height: fit-content;
 }
 
 .info {
   display: flex;
   padding-right: 10px;
   padding-left: 10px;
+  border-radius: 0 0 10px 10px;
+  height: 22rem;
 }
 .info2 {
   background-color: #292d9d;
-  /* position: relative; */
+  border: 1px solid transparent;
+  border-radius: 10px 10px 0 0;
+  padding-left: 1rem;
+  height: 9rem;
   color: white;
   background-image: url(../../assets/Data/Ornament.png);
-}
-
-.info2 img{
-    /* position: absolute;
-    left: 1rem; */
 }
 
 h6 {
   font-family: "Outfit";
   font-size: 11px;
   font-weight: 400;
-  line-height: 10px;
+  line-height: 8px;
 }
 
 p {
   font-family: Light;
   font-family: "Outfit";
   font-size: 10px;
+  line-height: 0px;
   font-weight: 300;
-  line-height: 2px;
 }
 
 .profileImage {
   width: 3rem;
   height: 3rem;
+  position: absolute;
+  left: 1rem;
+  top: 7.5rem;
 }
 
 .info1 {
@@ -67,4 +67,25 @@ p {
 .info1 p {
   align-items: right;
   text-align: right;
+}
+
+.info2 h4 {
+  font-family: "Outfit"  ;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 9px;
+}
+
+.info2 p {
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 9px;
+}
+
+.info2 h2 {
+  font-family: "Trap";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 9px;
 }

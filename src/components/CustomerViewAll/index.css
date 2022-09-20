@@ -8,19 +8,16 @@
 }
 .customer-listall-heading {
     background-color: #fff;
-
     padding: 0rem 1rem;
     border-bottom: 1px solid #DBE3EE;
-   
     align-items: center;
-   
     display: flex;
     justify-content: space-between;
   }
  
   .customerlist-para p{
     color: #2c2c2c;
-    font-family: "Trap";
+    font-family: Trap;
     font-style: normal;
     font-weight: 900;
     font-size: 20px;
@@ -29,7 +26,6 @@
     
   }
   .customer-heading-items{
-   
     width: 80%;
     display: flex;
     flex-flow: row;
@@ -49,7 +45,6 @@
   margin-left:1rem;
   padding: 1rem;
   border-radius: 12px;
- 
   justify-content: space-between;
 }
 .fiter-box span {
