@@ -1,5 +1,5 @@
-import './index.css'
 import React from 'react'
+import './index.css'
 import { CustomerListTable } from '../../assets/Data'
 const CustomerListTableComponent = () => {
   return (

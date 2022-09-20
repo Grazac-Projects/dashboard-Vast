@@ -1,8 +1,4 @@
 .customer-heading-main {
-
-  /* background-color: red; */
-=======
-
   padding: 0rem 3.8rem;
   width: 78vw;
   margin-top: 3rem;
@@ -10,13 +6,8 @@
 .customer-btn {
   width: 6rem;
   padding: 0.5rem;
-
-  /* height: 2rem; */
   background-color: #f1f1f1;
-  /* border: 1px solid black !important; */
-
   background-color: #f1f1f1;
-
   cursor: pointer;
   color: #424242 !important;
   border: none;
@@ -28,6 +19,7 @@
   font-size: 16px;
   text-decoration: none;
 }
+
 .customer-list-heading {
   background-color: #fff;
 
@@ -35,8 +27,6 @@
   padding: 0rem 1rem;
   border-bottom: 1px solid #dbe3ee;
   align-items: center;
-  /* width: 77vw; */
-
   padding: 0rem 1rem;
   border-bottom: 1px solid #dbe3ee;
   align-items: center;
@@ -44,6 +34,7 @@
   display: flex;
   justify-content: space-between;
 }
+
 .customer-para {
   color: #2c2c2c;
   font-family: "Trap";
@@ -52,13 +43,9 @@
   font-size: 20px;
   line-height: 150%;
 }
+
 .customer-list-table {
-
-  /* margin-top: 4rem; */
   padding: 0rem 4rem;
-  /* height:40rem; */
-  /* padding: 1rem; */
-
   margin: auto;
   display: flex;
   width: 78vw;
@@ -98,7 +85,7 @@ th,
 td {
   text-align: left;
   padding: 16px;
-
+}
 
 td {
   padding: 16px;

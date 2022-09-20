@@ -32,7 +32,6 @@ const customeroverview = () => {
       </div>
 
 
-      <CustomerListHeading />
       <CustomerListTable2 />
     </>
   );

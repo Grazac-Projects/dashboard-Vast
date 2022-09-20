@@ -364,76 +364,7 @@ export const CustomerListTable = [
     date:'10-11-2019'
   }
  ]
-export const CustomerListTable= [
-    {
-      serialNo:'1',
-      cardid:'ID1fc189b0',
-      cardnumber:'**** **** **** 3465',
-      user:'Adeola Brown',
-      phonenumber:'08131977989',
-      balance:'$1,500',
-      status:"status",
-      datecreated:'10-11-2019'
 
-        
-
-    },
-    {
-        serialNo:'2',
-        cardid:'ID1fc189b0',
-        cardnumber:'**** **** **** 3465',
-        user:'Adeola Brown',
-        phonenumber:'08131977989',
-        balance:'$1,500',
-        status:"status",
-        datecreated:'10-11-2019'
-  
-          
-  
-      },
-      {
-        serialNo:'3',
-        cardid:'ID1fc189b0',
-        cardnumber:'**** **** **** 3465',
-        user:'Adeola Brown',
-        phonenumber:'08131977989',
-        balance:'$1,500',
-        status:"status",
-        datecreated:'10-11-2019'
-  
-          
-  
-      },
-      {
-        serialNo:'3',
-        cardid:'ID1fc189b0',
-        cardnumber:'**** **** **** 3465',
-        user:'Adeola Brown',
-        phonenumber:'08131977989',
-        balance:'$1,500',
-        status:"status",
-        datecreated:'10-11-2019'
-  
-          
-  
-      },
-      {
-        serialNo:'3',
-        cardid:'ID1fc189b0',
-        cardnumber:'**** **** **** 3465',
-        user:'Adeola Brown',
-        phonenumber:'08131977989',
-        balance:'$1,500',
-        status:"status",
-        datecreated:'10-11-2019'
-  
-          
-  
-      },
-
-      
-    
-]
 
 export const currentrateData = [
   {
