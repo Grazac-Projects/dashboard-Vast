@@ -1,9 +1,9 @@
 // import React from 'react';
-import users from "../Data/profile-2user.png";
-import wallet from "../Data/wallet.png";
-import money from "../Data/moneys.png";
-import document from "../Data/document.png";
-import startups from "../Data/status-up.png";
+// import users from "../Data/profile-2user.png";
+// import wallet from "../Data/wallet.png";
+// import money from "../Data/moneys.png";
+// import document from "../Data/document.png";
+// import startups from "../Data/status-up.png";
 import ornament1 from "../Data/Ornament.png";
 import ornament2 from "../Data/Ornament2.png";
 import ornament3 from "../Data/Ornament3.png";
@@ -13,43 +13,43 @@ import icon2 from "../../assets/status-up.png";
 import icon3 from "../../assets/card1.png";
 import icon4 from "../../assets/Vector1.png";
 import identify from "../../assets/Base.png";
-export const dashCardData = [
-  {
-    icon: users,
-    title: "Total Users",
-    value: "260",
-    text: "4% (30 days)",
-    bg: "#3484ED",
-  },
-  {
-    icon: wallet,
-    title: "Mono Wallet Balance",
-    value: "₦60,540,926.00",
-    text: "",
-    bg: "#292D9D",
-  },
-  {
-    icon: money,
-    title: "Transaction Value",
-    value: "₦60,540,926.00",
-    text: "4% (30 days)",
-    bg: "#299D3B",
-  },
-  {
-    icon: document,
-    title: "Transaction Volume",
-    value: "260",
-    text: "4% (30 days)",
-    bg: "#050505",
-  },
-  {
-    icon: startups,
-    title: "Revenue",
-    value: "₦540,926.00",
-    text: "4% (30 days)",
-    bg: "#CBA00A",
-  },
-];
+// export const dashCardData = [
+//   {
+//     icon: users,
+//     title: "Total Users",
+//     value: "260",
+//     text: "4% (30 days)",
+//     bg: "#3484ED",
+//   },
+//   {
+//     icon: wallet,
+//     title: "Mono Wallet Balance",
+//     value: "₦60,540,926.00",
+//     text: "",
+//     bg: "#292D9D",
+//   },
+//   {
+//     icon: money,
+//     title: "Transaction Value",
+//     value: "₦60,540,926.00",
+//     text: "4% (30 days)",
+//     bg: "#299D3B",
+//   },
+//   {
+//     icon: document,
+//     title: "Transaction Volume",
+//     value: "260",
+//     text: "4% (30 days)",
+//     bg: "#050505",
+//   },
+//   {
+//     icon: startups,
+//     title: "Revenue",
+//     value: "₦540,926.00",
+//     text: "4% (30 days)",
+//     bg: "#CBA00A",
+//   },
+// ];
 
 export const CustomerListTable1 = [
   {
@@ -60,6 +60,9 @@ export const CustomerListTable1 = [
     email: "shalomayokunnu@gmail.com",
     status: "Active",
     date: "10-11-2019",
+    walletnumber:'08034563546',
+    taxvalue:'$30,757,000',
+    taxvolume:'826'
   },
   {
     id: 2,
@@ -69,6 +72,9 @@ export const CustomerListTable1 = [
     email: "shalomayokunnu@gmail.com",
     status: "Active",
     date: "10-11-2019",
+    walletnumber:'08034563546',
+    taxvalue:'$30,757,000',
+    taxvolume:'826'
   },
   {
     id: 3,
@@ -78,6 +84,9 @@ export const CustomerListTable1 = [
     email: "shalomayokunnu@gmail.com",
     status: "Active",
     date: "10-11-2019",
+    walletnumber:'08034563546',
+    taxvalue:'$30,757,000',
+    taxvolume:'826'
   },
   {
     id: 4,
@@ -87,6 +96,9 @@ export const CustomerListTable1 = [
     email: "shalomayokunnu@gmail.com",
     status: "Active",
     date: "10-11-2019",
+    walletnumber:'08034563546',
+    taxvalue:'$30,757,000',
+    taxvolume:'826'
   },
   {
     id: 5,
@@ -96,6 +108,9 @@ export const CustomerListTable1 = [
     email: "shalomayokunnu@gmail.com",
     status: "Active",
     date: "10-11-2019",
+    walletnumber:'08034563546',
+    taxvalue:'$30,757,000',
+    taxvolume:'826'
   },
   {
     id: 6,
@@ -105,6 +120,9 @@ export const CustomerListTable1 = [
     email: "shalomayokunnu@gmail.com",
     status: "Active",
     date: "10-11-2019",
+    walletnumber:'08034563546',
+    taxvalue:'$30,757,000',
+    taxvolume:'826'
   },
   {
     id: 7,
@@ -114,6 +132,9 @@ export const CustomerListTable1 = [
     email: "shalomayokunnu@gmail.com",
     status: "Active",
     date: "10-11-2019",
+    walletnumber:'08034563546',
+    taxvalue:'$30,757,000',
+    taxvolume:'826'
   },
   {
     id: 8,
@@ -123,6 +144,9 @@ export const CustomerListTable1 = [
     email: "shalomayokunnu@gmail.com",
     status: "Active",
     date: "10-11-2019",
+    walletnumber:'08034563546',
+    taxvalue:'$30,757,000',
+    taxvolume:'826'
   },
 ];
 
@@ -384,6 +408,7 @@ export const figures = [
     num3: 260,
     num4: "4% (30 days)",
     bg: "#29439D",
+    
   },
   {
     id: 2,
@@ -394,6 +419,7 @@ export const figures = [
     num3: 260,
     num4: "4% (30 days)",
     bg: "#299D3B",
+   
   },
   {
     id: 3,
@@ -404,6 +430,7 @@ export const figures = [
     num3: 260,
     num4: "4% (30 days)",
     bg: "#9D9129",
+   
   },
   {
     id: 4,
@@ -414,6 +441,7 @@ export const figures = [
     num3: 260,
     num4: "4% (30 days)",
     bg: "#9D2929",
+    
   },
   {
     id: 5,

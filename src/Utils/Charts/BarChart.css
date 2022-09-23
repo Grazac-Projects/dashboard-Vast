@@ -1,0 +1,39 @@
+.barchart-box{
+    /* background-color: red; */
+    padding: 0rem 4rem;
+}
+.bar-chart{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    color: rgba(115, 139, 169, 0.2);;
+}
+.bar-chart2{
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px;
+    color: rgba(115, 139, 169, 0.2);;
+}
+.barchart-box2{
+    /* background-color: red; */
+    padding: 0rem 4rem;
+    margin-top: 2rem;
+}
+.chart-p{
+    font-family: 'Trap';
+font-style: normal;
+font-weight: 800;
+font-size: 18px;
+line-height: 0px;
+color: #172327;
+
+
+}
+.chart-span{
+    font-family: 'Trap';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+letter-spacing: -0.04em;
+color: #969BA0;
+}

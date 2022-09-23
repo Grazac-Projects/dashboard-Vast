@@ -1,99 +1,87 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from "react";
+import "./BarChart.css";
 import {
-    Chart as ChartJS,
-  
-    BarElement, CategoryScale,
-    LinearScale,
-  
-  } from 'chart.js';
-  
-  import { Bar } from 'react-chartjs-2';
-  
-  ChartJS.register(
-    CategoryScale,
-    LinearScale,
-    BarElement,
-  );
-  
+  Chart as ChartJS,
+  BarElement,
+  CategoryScale,
+  LinearScale,
+} from "chart.js";
+
+import { Bar } from "react-chartjs-2";
+
+ChartJS.register(CategoryScale, LinearScale, BarElement);
 
 const BarChart = () => {
-  const [chart, setChart] = useState({})
-//   var baseUrl = "https://api.coinranking.com/v2/coins/?limit=10";
-//   var proxyUrl = "https://cors-anywhere.herokuapp.com/";
-//   var apiKey = "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx";
+  // const [chart, setChart] = useState({});
 
-
-//   useEffect(() => {
-//     const fetchCoins = async () => {
-//       await fetch(`${proxyUrl}${baseUrl}`, {
-//         method: 'GET',
-//         headers: {
-//           'Content-Type': 'application/json',
-//           'x-access-token': `${apiKey}`,
-//           'Access-Control-Allow-Origin': "*"
-//         }
-//       })
-//         .then((response) => {
-//           if (response.ok) {
-//             response.json().then((json) => {
-//               console.log(json.data);
-//               setChart(json.data)
-//             });
-//           }
-//         }).catch((error) => {
-//           console.log(error);
-//         });
-//     };
-//     fetchCoins()
-//   }, [baseUrl, proxyUrl, apiKey])
-
-//   console.log("chart", chart);
   var data = {
-    labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
-    datasets: [{
-        label: '# of Votes',
-        data: [12, 19, 3, 5, 2, 3],
-      backgroundColor: [
-        'rgba(255, 99, 132, 0.2)',
-        'rgba(54, 162, 235, 0.2)',
-        'rgba(255, 206, 86, 0.2)',
-        'rgba(75, 192, 192, 0.2)',
-        'rgba(153, 102, 255, 0.2)',
-        'rgba(255, 159, 64, 0.2)'
-      ],
-      borderColor: [
-        'rgba(255, 99, 132, 1)',
-        'rgba(54, 162, 235, 1)',
-        'rgba(255, 206, 86, 1)',
-        'rgba(75, 192, 192, 1)',
-        'rgba(153, 102, 255, 1)',
-        'rgba(255, 159, 64, 1)'
-      ],
-      borderWidth: 1
-    }]
+    labels: [
+      "Jan",
+      "Feb",
+      " March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "september",
+      "October",
+      "November",
+      "December",
+    ],
+    datasets: [
+      {
+        data: [12, 19, 3, 5, 2, 3, 10, 5, 8, 20, 5, 6],
+        backgroundColor: [
+          "#30AD53",
+          // 'red'
+        ],
+        barThickness: 60,
+        borderRadius: 2,
+        //   borderDash: [10,10]
+      },
+    ],
   };
 
   var options = {
     maintainAspectRatio: false,
+
     scales: {
+      x: {
+        grid: {
+          display: false,
+        },
+      },
+      y: {
+        grid: {
+          lineType: "dash",
+        },
+      },
     },
     legend: {
       labels: {
-        fontSize: 25,
+        fontSize: 20,
       },
     },
-  }
+  };
 
   return (
-    <div>
-      <Bar
-        data={data}
-        height={400}
-        options={options}
-
-      />
+    <div className='barchart-box2'>
+      {/* */}
+      <div className='bar-chart'>
+        <div>
+          <p className='chart-p'>Month on Month Breakdown for Transactions </p>
+          <span className='chart-span'>
+            Total Customer’s Account Balance:{" "}
+          </span>{" "}
+          <span className='chart-p'>90,000</span>
+        </div>
+        <div>
+          <Bar data={data} height={400} options={options} />
+        </div>
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default BarChart;

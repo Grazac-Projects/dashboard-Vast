@@ -1,0 +1,12 @@
+.main-analyticstable-box{
+    padding: 0rem 4rem;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    /* background-color: aqua; */
+}
+.analyticsTables-box{
+    /* background-color: red; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-between;
+}

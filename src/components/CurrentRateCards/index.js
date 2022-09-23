@@ -5,9 +5,10 @@ import React from 'react'
 const CurrentRateCards = () => {
   return (
    <div className='currentCard-box'>
+    
         {currentrateData.map((item, index)=>{
             return(
-                <div className='currentrate-card' 
+                <div className='currentrate-card'
                 style={{ backgroundColor:item.bgColor,
               backgroundImage:`url(${item.pattern})` }}>
                            

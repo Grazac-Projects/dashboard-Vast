@@ -1,0 +1,53 @@
+.Top10-customer-box {
+  /* background-color: green; */
+  border-radius: 10px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  /* height: 20rem; */
+  padding: 1rem;
+}
+.analyticsTable-HeaderBox {
+  background-color:#fff;
+  /* background-color: red; */
+  border-radius: 10px 10px 0px 0px;
+  display: flex;
+  /* width:; */
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.analyticsTable-HeaderBox span{
+  font-family: 'Trap';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 26px;
+color: #172327;
+
+}
+
+.top-filter-box {
+  background-color: #e9f3ff;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #172327;
+  justify-content: space-between;
+  border-radius: 5px;
+  padding: .5rem;
+  align-items: center;
+  display: flex;
+}
+.analyticsTop-list-table {
+  margin: auto;
+  display: flex;
+  /* width: 78vw; */
+  border-top: 1px solid #dbe3ee;
+}
+.analyticsTop-list-table{
+  /* background-color: red!important; */
+  width: 100% !important;
+}

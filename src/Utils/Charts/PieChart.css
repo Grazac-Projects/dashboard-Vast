@@ -1,0 +1,34 @@
+.piechart-box2{
+    /* background-color: red; */
+    padding: 0rem 4rem;
+    margin-top: 2rem;
+    overflow-x:hidden ;
+ }
+.pie-chart{
+    /* background-color: blue; */
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    /* margin: 1rem; */
+
+    /* color: rgba(115, 139, 169, 0.2);; */
+}
+.right-piechart-box{
+    background-color: #fff;
+    width:45%;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    /* margin-right: 2rem; */
+   
+   
+}
+.left-piechart-box{
+    
+    
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
