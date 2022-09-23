@@ -2,7 +2,7 @@ import React from "react";
 import Background from "../../components/Background/background";
 import CustomerListTableComponent from "../../components/CustomerListTableComponent";
 import EachOverview from "../../components/EachOverview/eachoverview";
-import CardsOverview from "../../components/CardsOverview/CardsOverview";
+import CardsOverview from "../../components/CardsOverview/Cardsoverview";
 import ListHeader from "../../components/ListHeader/ListHeader";
 import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
