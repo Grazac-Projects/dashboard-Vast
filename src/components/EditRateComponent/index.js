@@ -1,8 +1,8 @@
 import "./index.css";
-
+import { CgCloseO } from "react-icons/cg";
 import React from "react";
 
-const EditRateComponent = () => {
+const EditRateComponent = ({closeModal}) => {
   return (
     <div className='popup-box'>
       <div className='popup-content-box'>
@@ -49,6 +49,8 @@ const EditRateComponent = () => {
         </div>
 
       </div>
+      <CgCloseO onClick={()=> closeModal(false)} className="close" />
+
     </div>
   );
 };

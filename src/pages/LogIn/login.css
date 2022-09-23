@@ -1,35 +1,25 @@
 .login {
   justify-content: center;
-  width: 100vw;
-  margin: auto;
-  text-align: center;
   align-items: center;
+  z-index: 1;
+  flex-direction: column;
+  display: flex;
 }
 
 .logo {
-  align-items: center;
-  text-align: center;
-  margin: auto;
   width: 15rem;
-  margin-top: 2rem;
+  margin-top: 6vh;
 }
 
 h1 {
-  text-align: center;
   font-family: "Outfit";
   font-size: 65px;
-  /* margin: auto; */
   font-weight: 700;
-  line-height: 100px;
   letter-spacing: -0.04em;
-  margin: 5rem 0;
+  line-height: 100px;
 }
 form {
-  align-items: center;
-  justify-content: center;
   width: 25vw;
-  text-align: center;
-  margin: auto;
 }
 
 .label p,
@@ -37,16 +27,16 @@ form {
   font-family: "Outfit";
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
   color: #909090;
   letter-spacing: 0em;
 }
-input, .label3 {
+input,
+.label3 {
   border: 1px solid #f4f4f6;
   width: 25rem;
   border-radius: 10px;
   height: 3rem;
-  position: relative;
+  padding-left: 1rem;
 }
 
 input::placeholder {
@@ -55,6 +45,4 @@ input::placeholder {
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
-  letter-spacing: 0em;
-  padding-left: 1rem;
 }

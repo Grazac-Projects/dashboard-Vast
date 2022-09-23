@@ -11,11 +11,11 @@ import Analytics from "../src/pages/Analytics/analytics";
 import TransactionViewALL from "./pages/TransactionViewALL";
 import CardViewALLList from "./pages/CardViewALLList";
 import CustomerViewAllPage from "./pages/CustomerViewAllPage";
-
-import LogIn from "../src/pages/LogIn/login";
+import LogIn from "./pages/LogIn/Login";
+import Charges from "./pages/Charges/charges";
 function App() {
   const [userToken, setUserToken] = useState(true);
-  if (userToken === true) {
+  if (!userToken) {
     return <LogIn setUserToken={setUserToken} />;
   }
   return (
@@ -30,8 +30,12 @@ function App() {
             <Route path="/cards" element={<Cards />} />
             <Route path="/analytics" element={<Analytics />} />
             <Route path="/cardViewAll" element={<CardViewALLList />} />
-            <Route path="/transactionViewAll" element={<TransactionViewALL />} />
+            <Route
+              path="/transactionViewAll"
+              element={<TransactionViewALL />}
+            />
             <Route path="/customerViewAll" element={<CustomerViewAllPage />} />
+            <Route path="/Charges" element={<Charges />} />
           </Routes>
         </Sidebar>
       </BrowserRouter>{" "}

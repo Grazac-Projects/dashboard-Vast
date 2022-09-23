@@ -1,0 +1,130 @@
+.popup-box {
+  background-color: rgba(0, 0, 0, 1);
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  z-index: 1000;
+}
+.top-modal-box {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.popup-content-box {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2.3rem 0rem 5rem 0rem;
+  height: fit-content;
+  width: 40rem;
+  display: flex;
+
+  flex-direction: column;
+}
+.modal-header {
+  text-align: center;
+}
+.modal-header span {
+  font-family: "Trap";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 150%;
+}
+
+.popup-form-box {
+  display: flex;
+  justify-content: center;
+  padding: 0rem 6rem 0rem 6rem;
+  margin-top: 2rem;
+}
+
+.form-box {
+  width: 100%;
+}
+.sign-box {
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 3rem;
+  padding: 0rem 0rem 0rem 0.6rem;
+}
+.main-input-box {
+  border: 1px solid transparent;
+  display: flex;
+  background-color: #eeeeee;
+  height: 4.5rem;
+  border-radius: 12px;
+  align-items: center;
+}
+.form-one span {
+  font-family: "Trap";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  color: black;
+  line-height: 24px;
+}
+.form-one {
+  margin-bottom: 2rem;
+}
+
+.edit {
+  color: black !important;
+}
+input:focus {
+  outline: none;
+}
+input {
+  width: 80%;
+  background-color: #eeeeee;
+  font-size: 16px !important;
+  font-family: "Outfit";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  color: black;
+}
+.rate-btn {
+  background-color: black;
+  color: #fff;
+  width: 100%;
+  height: 5rem;
+  font-family: "Outfit";
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0em;
+  border-radius: 24px;
+  margin-top: 6rem;
+  cursor: pointer;
+}
+
+input[type="text"] {
+  border: 1px solid transparent;
+}
+
+.arrow {
+  font-size: 2rem;
+}
+
+.close {
+  color: white;
+  font-size: 3rem;
+  top: 0;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}

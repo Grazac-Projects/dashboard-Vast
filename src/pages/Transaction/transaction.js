@@ -12,7 +12,6 @@ function transaction() {
             <EachOverview props='Transaction' text='Transaction Overview'/>
             <TransactionOverview />
             <ListHeader listType='Transaction List' link= {<Link to="/transactionViewAll" >View All</Link>}
-             
            />
         <Table/>
     </div>

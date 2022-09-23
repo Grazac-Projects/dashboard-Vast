@@ -65,7 +65,6 @@ span {
 }
 
 .card {
-  height: 3rem;
   background-color: white;
   display: flex;
   position: relative;

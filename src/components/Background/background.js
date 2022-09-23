@@ -1,15 +1,15 @@
 import React from "react";
 import Prof from "../../assets/Image.png";
-import money1 from "../../assets/money-4.png";
+import charges from "../../pages/Charges/charges";
+import TransactionTypes from "../TransactionTypes/TransactionTypes";
+import TransactionCharges from "../TransactionCharges/transactioncharges";
 import ArrowDown from "../../assets/arrow.svg";
+import { Link } from "react-router-dom";
 import "./background.css";
 const Background = () => {
   return (
     <div className="background">
-      <div className="outer">
-        <img src={money1} alt="" />
-        <p className="charges">Transaction Charges</p>
-      </div>
+      <TransactionCharges link= {<Link to="/charges" >Transaction Charges</Link>} />
       <div className="Inner">
         <img src={Prof} alt="profile" />
         <div className="carter">

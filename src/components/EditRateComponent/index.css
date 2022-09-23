@@ -1,5 +1,4 @@
 .popup-box {
-  /* background-color: rgba(200,200,200); */
   background-color: rgba(0, 0, 0, 1);
   position: absolute;
   left: 0;
@@ -48,7 +47,6 @@
 }
 .screen-box {
   display: flex;
-
   justify-content: center;
 }
 .modal-screen {

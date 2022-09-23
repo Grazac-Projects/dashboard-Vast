@@ -2,7 +2,7 @@
   width: 290px;
   background: #f4f4f6;
   border-radius: 12px;
-  padding: 1rem;
+  /* padding: 1rem; */
   position: relative;
   color: rgba(0, 0, 0, 0.35);
 }
@@ -43,11 +43,10 @@
 }
 .fiter-box {
   background-color: #f4f4f6;
-  width: 190px;
+  width: 78vw;
   display: flex;
   align-items: center;
-  margin-left:1rem;
-  padding: 1rem;
+  /* padding: 1rem; */
   border-radius: 12px;
  
   justify-content: space-between;
@@ -61,8 +60,9 @@
   line-height: 20px;
 }
 .customer-heading-main-all {
-    /* background-color: red; */
-    padding: 0rem 3.8rem;
+    /* padding: 0rem 3.8rem; */
       width: 78vw;
     margin-top: 3rem;
+    margin-left: auto;
+    margin-right: auto;
   }

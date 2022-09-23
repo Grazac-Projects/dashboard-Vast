@@ -334,37 +334,36 @@ export const CustomerListTable = [
   },
 ];
 
- export const customerListTwo =[
+export const customerListTwo = [
   {
-    indexNo:'#',
-    phoneNumber:'08131977989',
-    emailAddress:'fetteuq@gamil.com',
-    status:'status',
-    date:'10-11-2019'
+    indexNo: "#",
+    phoneNumber: "08131977989",
+    emailAddress: "fetteuq@gamil.com",
+    status: "status",
+    date: "10-11-2019",
   },
   {
-    indexNo:'1',
-    phoneNumber:'08131977989',
-    emailAddress:'fetteuq@gamil.com',
-    status:'status',
-    date:'10-11-2019'
+    indexNo: "1",
+    phoneNumber: "08131977989",
+    emailAddress: "fetteuq@gamil.com",
+    status: "status",
+    date: "10-11-2019",
   },
   {
-    indexNo:'2',
-    phoneNumber:'08131977989',
-    emailAddress:'fetteuq@gamil.com',
-    status:'status',
-    date:'10-11-2019'
+    indexNo: "2",
+    phoneNumber: "08131977989",
+    emailAddress: "fetteuq@gamil.com",
+    status: "status",
+    date: "10-11-2019",
   },
   {
-    indexNo:'3',
-    phoneNumber:'08131977989',
-    emailAddress:'fetteuq@gamil.com',
-    status:'status',
-    date:'10-11-2019'
-  }
- ]
-
+    indexNo: "3",
+    phoneNumber: "08131977989",
+    emailAddress: "fetteuq@gamil.com",
+    status: "status",
+    date: "10-11-2019",
+  },
+];
 
 export const currentrateData = [
   {
@@ -384,6 +383,65 @@ export const currentrateData = [
     title: "Mono Rate",
     rate: "₦702.98/$1",
     pattern: ornament3,
+  },
+];
+
+export const card_creation = [
+  {
+    bgColor: "#292D9D",
+    title: "TransactionTypes",
+    rate: "$3",
+    pattern: ornament1,
+    edit: "Edit Charge",
+  },
+];
+
+export const vast_to_vast = [
+  {
+    bgColor: "#299D3B",
+    title: "Vast to Vast",
+    rate: "$0",
+    pattern: ornament2,
+    edit: "Edit Charge",
+  },
+];
+
+export const vast_to_bank = [
+  {
+    bgColor: "#050505",
+    title: "Vast to Bank",
+    rate: "0.8%",
+    pattern: ornament3,
+    edit: "Edit Charge",
+  },
+];
+
+export const card_to_wallet = [
+  {
+    bgColor: "#5EAA76",
+    title: "Card to Wallet",
+    rate: "$0",
+    pattern: ornament3,
+    edit: "Edit Rate",
+  },
+];
+
+export const card_funding=[
+  {
+    bgColor: "#F2A53B",
+    title: "Card Funding",
+    rate: "$3",
+    pattern: ornament1,
+    edit: "Edit Rate",
+  },
+]
+export const account_top_up = [ 
+  {
+    bgColor: "#E5346A",
+    title: "Account Top Up",
+    rate: "$0",
+    pattern: ornament2,
+    edit: "Edit Rate",
   },
 ];
 

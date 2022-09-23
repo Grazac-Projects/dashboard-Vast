@@ -1,0 +1,25 @@
+.layout {
+  display: block; /* justify-content: space-between; */
+  /* position: relative; */
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0.2;
+  /* position: relative; */
+}
+
+.layout1,
+.layout2,
+.layout3,
+.layout4 {
+  display: flex;
+  justify-content: space-around;
+  gap: 5rem;
+  margin-bottom: 11vh;
+
+}
+
+

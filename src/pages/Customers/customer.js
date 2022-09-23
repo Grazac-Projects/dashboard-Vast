@@ -46,8 +46,6 @@ const Customer = () => {
 
       <ListHeader setShowUser={setShowUser} listType='Customer List' link= {<Link to="/customerViewAll" >View All</Link>} />
       <CustomerListTable2  />
-      {/* <ListHeader setShowUser={setShowUser} listType="Customers List" /> */}
-      {/* <CustomerListTable2 /> */}
     </div>
   );
 };

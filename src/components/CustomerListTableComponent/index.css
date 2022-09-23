@@ -1,7 +1,11 @@
 .customer-heading-main {
-  padding: 0rem 3.8rem;
+  /* padding: 0rem 3.8rem; */
   width: 78vw;
   margin-top: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
 }
 .customer-btn {
   width: 6rem;
@@ -22,8 +26,6 @@
 
 .customer-list-heading {
   background-color: #fff;
-
-  /* background-color: #c12b2b; */
   padding: 0rem 1rem;
   border-bottom: 1px solid #dbe3ee;
   align-items: center;
@@ -45,7 +47,7 @@
 }
 
 .customer-list-table {
-  padding: 0rem 4rem;
+  /* padding: 0rem 4rem; */
   margin: auto;
   display: flex;
   width: 78vw;
