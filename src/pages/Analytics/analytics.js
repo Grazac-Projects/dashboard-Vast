@@ -8,6 +8,7 @@ import BarChart3 from "../../Utils/Charts/BarChart3";
 import BarChat4 from "../../Utils/Charts/BarChat4";
 import Piechart from "../../Utils/Charts/Piechart";
 // import PieChart2 from "../../Utils/Charts/PieChart2";
+// import BarChart from '../../Utils/Charts/BarChart';
 
 const analytics = () => {
   return (

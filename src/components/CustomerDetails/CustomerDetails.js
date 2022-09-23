@@ -3,21 +3,21 @@ import CustomerInformationCard from "../../components/CustomerInformationCard/Cu
 import CustomerInformationTransaction from "../../components/CustomerInformationTransaction/CustomerInformationTransaction";
 import { details } from "../../assets/Data";
 import "./customerdetails.css";
-const CustomerDetails = () => {
+
+const CustomerDetails = ({detail}) => {
   return (
     <div className="detailed">
       {details.map((detail, index) => {
         return (
           <div className="details2">
-            <div>
               <div className="info2">
                 <h4>{detail.h4}</h4>
                 <p>{detail.p}</p>
                 <h2>{detail.total}</h2>
-                <img className="profileImage" src={detail.profile_image} alt="" />
+                {/* <img className="profileImage" src={detail.profile_image} alt="" /> */}
               </div>
               <div className="info">
-                <div >
+                <div className="info3">
                   <div>
                     <h6>First Name</h6>
                     <p>{detail.firstname}</p>
@@ -53,7 +53,6 @@ const CustomerDetails = () => {
                     <p>{detail.nin}</p>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
         );

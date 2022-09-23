@@ -3,8 +3,33 @@
   width: 100%;
   position: relative;
   height: 5rem;
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
+.outer {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #3484ed;
+  background: #3484ed;
+  border-radius: 20px;
+  width: 15rem;
+  gap: 12px;
+  color: white;
+  right: 15rem;
+  height: 2.5rem;
+}
+
+.charges {
+  font-family: "Outfit";
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 12px;
+  letter-spacing: 0em;
+}
 .Inner {
   display: flex;
   align-items: center;

@@ -15,7 +15,7 @@
     color: #fff;
 }
 .currentrate-card span{
-    font-family: 'Outfit';
+    font-family: "Outfit";
     font-style: normal;
     font-weight: 500;
     font-size: 20px;
@@ -23,7 +23,7 @@
     line-height: 20px;
 }
 .currentrate-card p{
-    font-family: 'Trap';
+    font-family: "Trap";
     font-style: normal;
     font-weight: 700;
     font-size: 2.5rem;

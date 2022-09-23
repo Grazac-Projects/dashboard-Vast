@@ -1,0 +1,48 @@
+.login {
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  flex-direction: column;
+  display: flex;
+}
+
+.logo {
+  width: 15rem;
+  margin-top: 6vh;
+}
+
+h1 {
+  font-family: "Outfit";
+  font-size: 65px;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  line-height: 100px;
+}
+form {
+  width: 25vw;
+}
+
+.label p,
+.label2 p {
+  font-family: "Outfit";
+  font-size: 16px;
+  font-weight: 400;
+  color: #909090;
+  letter-spacing: 0em;
+}
+input,
+.label3 {
+  border: 1px solid #f4f4f6;
+  width: 25rem;
+  border-radius: 10px;
+  height: 3rem;
+  padding-left: 1rem;
+}
+
+input::placeholder {
+  font-family: "Outfit";
+  color: #353535;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+}

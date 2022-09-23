@@ -12,8 +12,6 @@ const DashboardCardComponent= () => {
       <div className='left-cards-box'>
         <span className="heading">Business Overview</span>
         <CardComponent />
-       
-       
       </div>
       <div className='right-cards-box'>
         <div className='right-cards-heading-box'>

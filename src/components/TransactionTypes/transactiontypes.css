@@ -1,0 +1,73 @@
+.transactiontype-fullbox {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 1rem;
+  max-width: 78vw;
+  padding-bottom: 2rem;
+  margin: auto;
+  /* z-index: -1; */
+}
+.TransactionTypes-box {
+  color: black; 
+background-color: white;
+ border-radius: 10px;
+ margin: auto;
+ height: 65vh;
+ width: 78vw;
+ align-items: center;
+ justify-content: center;
+}
+
+.TransactionTypes-card {
+  background-color: white;
+  display: flex;
+  cursor: pointer;
+  height: 160px;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  padding: 0px 5px; 
+  margin: auto;
+  box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.12);
+  width: calc(70vw/3);
+  
+}
+
+
+.type {
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(87, 87, 87, 1);
+} 
+.title12 {
+  font-family: "Outfit";
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.rate1 {
+  font-family: "Trap";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 10px;
+  color: rgba(255, 255, 255, 1);
+
+}
+
+.rate-box {
+  align-items: center;
+  display: flex;
+  border-radius: 5px;
+  gap: 5px;
+  border: 1px solid transparent;
+  height: 2rem;
+  cursor: pointer;
+} 
