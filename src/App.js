@@ -12,7 +12,7 @@ import TransactionViewALL from "./pages/TransactionViewALL";
 import CardViewALLList from "./pages/CardViewALLList";
 import CustomerViewAllPage from "./pages/CustomerViewAllPage";
 import LogIn from "./pages/LogIn/Login";
-import Charges from "./pages/Charges/charges";
+import Charges from "./pages/Charges/Charges";
 function App() {
   const [userToken, setUserToken] = useState(true);
   if (!userToken) {

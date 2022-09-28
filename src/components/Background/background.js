@@ -1,6 +1,6 @@
 import React from "react";
 import Prof from "../../assets/Image.png";
-import charges from "../../pages/Charges/charges";
+import Charges from "../../pages/Charges/Charges";
 import TransactionTypes from "../TransactionTypes/TransactionTypes";
 import TransactionCharges from "../TransactionCharges/transactioncharges";
 import ArrowDown from "../../assets/arrow.svg";

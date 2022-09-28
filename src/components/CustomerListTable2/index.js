@@ -30,7 +30,7 @@ const CustomerListTable2 = ({ setShowUser }) => {
               <td className="identities">
                 <img src={item.identity} alt="" /> {item.customer}
               </td>
-              <td>{item.number}</td>
+              <td>{item.number}</td> 
               <td>{item.email} </td>
               <td>
                 <button className="table-btn1 table-btn2">{item.status}</button>{" "}

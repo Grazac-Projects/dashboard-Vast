@@ -14,6 +14,9 @@ import { useSelector } from "react-redux";
 
 const CardComponent = () => {
   const measure = useSelector((state) => state.admindata.dashboardData);
+  const transactionValues = useSelector((state)=>state.vastInfocards.vastcardinfoData);
+  const monwallletBalance = useSelector((state)=>state.monowalletbalance.monobalanceData)
+  
   
   return (
     <>
@@ -44,7 +47,7 @@ const CardComponent = () => {
             <span >Mono Wallet Balance</span>
             </div>
               <Card.Text className="right">
-              <span className="black">₦60,540,926.00</span>
+              <span className="black">{monwallletBalance}</span>
               <p></p>
               </Card.Text>
            
@@ -58,7 +61,7 @@ const CardComponent = () => {
             <span >Transaction Value</span>
             </div>
               <Card.Text className="right">
-              <span className="black">₦60,540,926.00</span>
+              <span className="black">{`₦${transactionValues.totalTransactionValue}`}</span>
               <p>4% (30 days)</p>
               </Card.Text>
            
@@ -72,7 +75,7 @@ const CardComponent = () => {
             <span >Transaction Volume</span>
             </div>
               <Card.Text className="right">
-              <span className="black"></span>
+              <span className="black">{transactionValues.totalTransactionCount}</span>
               <p>4% (30 days)</p>
               </Card.Text>
            
@@ -85,8 +88,8 @@ const CardComponent = () => {
             </div>
             <span >Revenue</span>
             </div>
-              <Card.Text className="right">
-              <span className="black">₦540,926.00</span>
+              <Card.Text className="right">{}
+              <span className="black">{`₦${transactionValues.totalRevenue}`}</span>
               <p>4% (30 days)</p>
               </Card.Text>
            

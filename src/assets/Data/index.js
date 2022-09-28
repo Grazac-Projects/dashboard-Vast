@@ -413,7 +413,7 @@ export const currentrateData = [
 export const card_creation = [
   {
     bgColor: "#292D9D",
-    title: "TransactionTypes",
+    title: "Card Creation",
     rate: "$3",
     pattern: ornament1,
     edit: "Edit Charge",

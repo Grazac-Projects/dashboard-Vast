@@ -12,6 +12,10 @@ import CustomerOverview from "../../components/CustomerOverview/customeroverview
 import CustomerListTable2 from "../../components/CustomerListTable2";
 
 const Customer = () => {
+ 
+
+
+
   const [isOverview, setIsOverview] = useState(false);
   const [isShowUser, setShowUser] = useState('');
   const details = [
