@@ -15,24 +15,24 @@ function transaction() {
   // const dispatch = useDispatch();
 
   const getTrantableData = async () => {
-    // try {
-    //   const transTable = await axios.get(
-    //     "https://vast-app.herokuapp.com/api/v1/admin/users/count",
-    //     {
-    //       withCredentials: true,
-    //       headers: {
-    //         "Access-Control-Allow-Origin": "*",
-    //         "Content-Type": "application/json",
-    //       },
-    //     }
-    //   );
-    //   console.log(plenty.data);
-    //   // console.log(plenty.data.userDetailsForAdmin);
+    try {
+      const transTable = await axios.get(
+        "https://vast-app.herokuapp.com/api/v1/admin/users/count",
+        {
+          withCredentials: true,
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log(plenty.data);
+      // console.log(plenty.data.userDetailsForAdmin);
 
-    //   dispatch(saveData(plenty.data.userDetailsForAdmin));
-    // } catch (e) {
-    //   console.log(e, "this is the error");
-    // }
+      dispatch(saveData(plenty.data.userDetailsForAdmin));
+    } catch (e) {
+      console.log(e, "this is the error");
+    }
   };
 
 
