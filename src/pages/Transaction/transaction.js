@@ -5,7 +5,37 @@ import TransactionOverview from '../../components/TransactionOverview/transactio
 import ListHeader from '../../components/ListHeader/ListHeader';
 import Table from '../../components/Table/Table'
 import { Link } from 'react-router-dom';
+import axios from "axios";
+// import { useDispatch } from 'react-redux';
+
+
+
+
 function transaction() {
+  // const dispatch = useDispatch();
+
+  const getTrantableData = async () => {
+    // try {
+    //   const transTable = await axios.get(
+    //     "https://vast-app.herokuapp.com/api/v1/admin/users/count",
+    //     {
+    //       withCredentials: true,
+    //       headers: {
+    //         "Access-Control-Allow-Origin": "*",
+    //         "Content-Type": "application/json",
+    //       },
+    //     }
+    //   );
+    //   console.log(plenty.data);
+    //   // console.log(plenty.data.userDetailsForAdmin);
+
+    //   dispatch(saveData(plenty.data.userDetailsForAdmin));
+    // } catch (e) {
+    //   console.log(e, "this is the error");
+    // }
+  };
+
+
   return (
     <div>
             <Background/>

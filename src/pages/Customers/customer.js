@@ -1,7 +1,7 @@
 // import picture from "../../../assets/picture.png";
 // import ornament1 from "../../assets/Data/Ornament.png";
 // import ornament1 from "../../assets";
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import CustomerDetails from "../../components/CustomerDetails/CustomerDetails";
@@ -10,11 +10,30 @@ import ListHeader from "../../components/ListHeader/ListHeader";
 import EachOverview from "../../components/EachOverview/eachoverview";
 import CustomerOverview from "../../components/CustomerOverview/customeroverview";
 import CustomerListTable2 from "../../components/CustomerListTable2";
-
+import { useDispatch } from "react-redux";
+import axios from 'axios';
+import {savecustomerData} from '../../redux/Customer-details'
 const Customer = () => {
  
+ 
+    const dispatch = useDispatch();
+  
+    const getcustomerDetails = async () => {
+      try {
+        const Allcustomers = await axios.get(
+          "https://vast-app.herokuapp.com/api/v1/admin/users/data"
+        );
+        // const userOne = Allcustomers.data.name;
+        // console.log(userOne)
 
-
+        dispatch(savecustomerData(Allcustomers.data.users));
+      } catch (e) {
+        console.log(e, "this is the error");
+      }
+    };
+useEffect(()=>{
+  getcustomerDetails();
+}, [])
 
   const [isOverview, setIsOverview] = useState(false);
   const [isShowUser, setShowUser] = useState('');
