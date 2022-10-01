@@ -14,6 +14,7 @@ import CustomerViewAllPage from "./pages/CustomerViewAllPage";
 import LogIn from "./pages/LogIn/Login";
 import Charges from "./pages/Charges/charges";
 import useToken from './components/useToken';
+import Charges from "./pages/Charges/Charges";
 function App() {
   const { token, setToken } = useToken();
 

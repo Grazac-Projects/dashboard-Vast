@@ -2,6 +2,7 @@
 // import ornament1 from "../../assets/Data/Ornament.png";
 // import ornament1 from "../../assets";
 import React, { useEffect } from "react";
+import {savecustomerData} from '../../redux/Customer-details'
 import { useDispatch } from "react-redux";
 import { useState } from "react";
 import axios from "axios";
@@ -15,6 +16,7 @@ import CustomerListTable2 from "../../components/CustomerListTable2";
 import { savecustomercardData } from "../../redux/customeruser";
 
 const Customer = () => {
+ 
   const dispatch = useDispatch();
 
   const getcustomerData = async () => {
@@ -34,6 +36,23 @@ const Customer = () => {
     getcustomerData();
   }, []);
   
+    const getcustomerDetails = async () => {
+      try {
+        const Allcustomers = await axios.get(
+          "https://vast-app.herokuapp.com/api/v1/admin/users/data"
+        );
+        // const userOne = Allcustomers.data.name;
+        // console.log(userOne)
+
+        dispatch(savecustomerData(Allcustomers.data.users));
+      } catch (e) {
+        console.log(e, "this is the error");
+      }
+    };
+useEffect(()=>{
+  getcustomerDetails();
+}, [])
+
   const [isOverview, setIsOverview] = useState(false);
   const [isShowUser, setShowUser] = useState("");
   const details = [

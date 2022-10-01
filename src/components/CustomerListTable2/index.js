@@ -1,12 +1,22 @@
-
-import './index.css'
-import React from 'react';
-import { customerListTwo } from '../../assets/Data';
+import "./index.css";
+import React from "react";
+import { customerListTwo } from "../../assets/Data";
 import { CustomerListTable1 } from "../../assets/Data";
-
+import { useState } from "react";
+import { useSelector } from "react-redux";
 const CustomerListTable2 = ({ setShowUser }) => {
+  const [users, setusers] = useState([]);
+  const customerdetails = useSelector(
+    (state) => state.CustomerDetails.CustomersdetailsData
+  );
+  const customers = useSelector(
+    (state) => state.CustomerDetails.CustomersdetailsData
+  );
+ 
+
   return (
-    <div className="customer-list-table">
+    <div className='customer-list-table'>
+
       <table>
         <tr>
           <th>#</th>
@@ -16,31 +26,31 @@ const CustomerListTable2 = ({ setShowUser }) => {
           <th>Status</th>
           <th>Date</th>
         </tr>
-        {CustomerListTable1.map((item, index) => {
-          return (
-            <tr
-              onClick={() => {
-                console.log(item.id);
-                setShowUser({
-                  
-                })
-              }}
-            >
-              <td>{item.id}</td>
-              <td className="identities">
-                <img src={item.identity} alt="" /> {item.customer}
-              </td>
-              <td>{item.number}</td>
-              <td>{item.email} </td>
-              <td>
-                <button className="table-btn1 table-btn2">{item.status}</button>{" "}
-              </td>
-              <td>{item.date} </td>
-            </tr>
-          );
-        })}
+        {customerdetails
+          ? customerdetails.map((item, index) => {
+              return (
+                <tr
+                  onClick={() => {
+                    console.log(item.id);
+                    setShowUser({});
+                  }}
+                >
+                  <td>{item.id}</td>
+                  <td className='identities'>
+                    <img src={item.identity} alt='' /> {item.name}
+                  </td>
+                  <td>{item.phoneNo}</td>
+                  <td>{item.username} </td>
+                  <td>
+                    {/* {item.gender} */}
+                   {item.status}
+                  </td>
+                  <td>{item.localDateTime} </td>
+                </tr>
+              );
+            })
+          : null}
       </table>
-
     </div>
   );
 };

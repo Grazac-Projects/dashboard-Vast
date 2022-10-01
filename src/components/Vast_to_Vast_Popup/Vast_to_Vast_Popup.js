@@ -20,7 +20,7 @@ const Vast_to_Vast_Popup = ({ closeModal }) => {
                 <div className="sign-box">%</div>
                 <RiArrowDropDownLine className="arrow" />
                 <img src={line} alt="line" />
-                <input type="text" placeholder="Amount" />
+                <input type="number" placeholder="Amount" />
               </div>
             </div>
             <button className="rate-btn ">Set New Rate</button>

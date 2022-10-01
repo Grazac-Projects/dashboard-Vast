@@ -4,11 +4,13 @@ import "./../TransactionTypes/transactiontypes.css";
 import editicon from "../../assets/Data/Vector.png";
 import EditRateComponent from "../EditRateComponent";
 import Card_to_Wallet_Popup from "../Card_to_Wallet_Popup/Card_to_Wallet_Popup";
+import { useSelector } from "react-redux";
 const Card_to_wallet = () => {
   const [modalShow, setModalShow] = useState(false);
   const handleclick = () => {
     setModalShow(true);
   };
+  const cardtowalletcharges = useSelector((state) => state.vastchargesdata.vastChargesData);
   return (
     <div>
       {card_to_wallet.map((item, index) => {
@@ -23,7 +25,7 @@ const Card_to_wallet = () => {
                         <div className="padding">
             <div>
               <p className="title12">{item.title}</p>
-              <h3 className="rate1">{item.rate}</h3>
+              <h3 className="rate1">{cardtowalletcharges.cardWithdrawalCharges}</h3>
             </div>
             <div onClick={handleclick}>
               <button className="rate-box">
