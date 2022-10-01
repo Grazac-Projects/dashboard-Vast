@@ -1,6 +1,6 @@
 
 import React from "react";
-import "../CustomerOverview/customeroverview";
+import "../CustomerOverview/Customeroverview";
 import icon3 from "../../assets/card1.png";
 
 import { useSelector, useDispatch } from 'react-redux'

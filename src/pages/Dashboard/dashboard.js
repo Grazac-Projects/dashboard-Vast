@@ -21,8 +21,8 @@ const Dashboard = () => {
       const plenty = await axios.get(
         "https://vast-app.herokuapp.com/api/v1/admin/users/count"
       );
-      console.log(plenty.data);
-      console.log(plenty.data.userDetailsForAdmin);
+      // console.log(plenty.data);
+      // console.log(plenty.data.userDetailsForAdmin);
       dispatch(saveData(plenty.data.userDetailsForAdmin));
     } catch (e) {
       console.log(e, "this is the error");

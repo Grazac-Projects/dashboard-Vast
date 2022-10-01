@@ -20,6 +20,7 @@ const Card_to_wallet = () => {
               backgroundImage: `url(${item.pattern})`,
             }}
           >
+                        <div className="padding">
             <div>
               <p className="title12">{item.title}</p>
               <h3 className="rate1">{item.rate}</h3>
@@ -29,6 +30,7 @@ const Card_to_wallet = () => {
                 <img src={editicon} alt="edit-rate-icon" />
                 {item.edit}
               </button>
+            </div>
             </div>
             {modalShow && <Card_to_Wallet_Popup closeModal ={setModalShow} />}
           </div>

@@ -10,7 +10,7 @@ import './transactiontypes.css';
 const TransactionTypes = () => {
   return (
     <div className="TransactionTypes-box">
-      <h6 className="type">TransactionTypes</h6>
+      <h6 className="type">Transaction types</h6>
       <div className="transactiontype-fullbox">
         <Card_creation />
         <Vast_to_Vast />

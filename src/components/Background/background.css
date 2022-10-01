@@ -1,15 +1,13 @@
 .background {
   background-color: rgba(255, 255, 255, 1);
   width: 100%;
-  position: relative;
   height: 5rem;
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .outer {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,10 +15,13 @@
   background: #3484ed;
   border-radius: 20px;
   width: 15rem;
-  gap: 12px;
+  gap: 1px;
   color: white;
-  right: 15rem;
   height: 2.5rem;
+  position: fixed;
+  /* background-color: rgba(255, 255, 255, 1); */
+  right: 15rem;
+  margin-top: -2vh;
 }
 
 .charges {
@@ -33,10 +34,11 @@
 .Inner {
   display: flex;
   align-items: center;
-  position: absolute;
+  position: fixed;
   gap: 9px;
   right: 2rem;
   align-items: center;
+  background-color: rgba(255, 255, 255, 1);
   margin-top: 1rem;
 }
 

@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import { card_creation } from "../../assets/Data";
 import "./../TransactionTypes/transactiontypes.css";
 import editicon from "../../assets/Data/Vector.png";
-import './style.css'
-import Card_Creation_Popup  from "../Card_Creation_Popup/Cardcreationpopup";
+import "./style.css";
+import Card_Creation_Popup from "../Card_Creation_Popup/Cardcreationpopup";
 const Card_creation = () => {
   const [modalShow, setModalShow] = useState(false);
   const handleclick = () => {
@@ -20,17 +20,19 @@ const Card_creation = () => {
               backgroundImage: `url(${item.pattern})`,
             }}
           >
-            <div>
-              <p className="title12">{item.title}</p>
-              <h3 className="rate1">{item.rate}</h3>
+            <div className="padding">
+              <div>
+                <p className="title12">{item.title}</p>
+                <h3 className="rate1">{item.rate}</h3>
+              </div>
+              <div onClick={handleclick}>
+                <button className="rate-box">
+                  <img src={editicon} alt="edit-rate-icon" />
+                  {item.edit}
+                </button>
+              </div>
             </div>
-            <div onClick={handleclick}>
-              <button className="rate-box">
-                <img src={editicon} alt="edit-rate-icon" />
-                {item.edit}
-              </button>
-            </div>
-            {modalShow && <Card_Creation_Popup closeModal ={setModalShow} />}
+            {modalShow && <Card_Creation_Popup closeModal={setModalShow} />}
           </div>
         );
       })}

@@ -11,7 +11,7 @@ const Account_topup_Popup = ({closeModal}) => {
       <div className="popup-content-box">
         <div className="top-modal-box">
           <div className="modal-header">
-            <span className="edit">Set Transaction Chargess</span>
+            <span className="edit">Set Account Top Up</span>
           </div>
         </div>
         <div className="popup-form-box">

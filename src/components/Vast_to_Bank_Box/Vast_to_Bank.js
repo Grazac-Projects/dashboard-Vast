@@ -19,6 +19,7 @@ const Vast_to_Bank = () => {
               backgroundImage: `url(${item.pattern})`,
             }}
           >
+                        <div className="padding">
             <div>
               <p className="title12">{item.title}</p>
               <h3 className="rate1">{item.rate}</h3>
@@ -28,6 +29,7 @@ const Vast_to_Bank = () => {
                 <img src={editicon} alt="edit-rate-icon" />
                 {item.edit}
               </button>
+            </div>
             </div>
             {modalShow && <Vast_to_Vast_Popup closeModal={setModalShow} />}
           </div>

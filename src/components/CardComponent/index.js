@@ -18,9 +18,6 @@ const CardComponent = () => {
   return (
     <>
     <div className=" dash-card-box">
-    
-        
-      
           <div className="cardd" >
             
             <div className="left">

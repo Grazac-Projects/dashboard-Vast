@@ -413,7 +413,7 @@ export const currentrateData = [
 export const card_creation = [
   {
     bgColor: "#292D9D",
-    title: "TransactionTypes",
+    title: "Card Creation",
     rate: "$3",
     pattern: ornament1,
     edit: "Edit Charge",
@@ -541,6 +541,48 @@ export const figures = [
     num1: "₦540,926.0",
     num2: "4% (30 days)",
     bg: "#B00ACB",
+  },
+];
+
+
+export const figure20 = [
+  {
+    id: 1,
+    icon: icon1,
+    number: "Total Users",
+    num1: "₦60,540,926.0",
+    num2: "4% (30 days)",
+    num3: 260,
+    num4: "4% (30 days)",
+    bg: "#29439D",
+  },
+
+  
+];
+
+export const figure21 = [
+  {
+    id: 2,
+    icon: icon1,
+    number: "Active Users",
+    num1: "₦60,540,926.0",
+    num2: "4% (30 days)",
+    num3: 260,
+    num4: "4% (30 days)",
+    bg: "#299D3B",
+  },
+];
+
+export const figure22 = [
+  {
+    id: 3,
+    icon: icon1,
+    number: "Inctive Users",
+    num1: "₦60,540,926.0",
+    num2: "4% (30 days)",
+    num3: 260,
+    num4: "4% (30 days)",
+    bg: "#CB0A0A",
   },
 ];
 

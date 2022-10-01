@@ -1,5 +1,5 @@
 import React from "react";
-import "../CustomerOverview/customeroverview";
+import "../CustomerOverview/Customeroverview";
 import './style.css'
 import { figurescard1 } from "../../assets/Data";
 const CustomerInformationCard = ({heading}) => {
