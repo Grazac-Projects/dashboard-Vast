@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import "./App.css";
 import Sidebar from "../src/components/Sidebar";
 import Dashboard from "../src/pages/Dashboard/dashboard";
-import Transaction from "../src/pages/Transaction/transaction";
+import Transaction from "./pages/Transaction/Transaction";
 import Customers from "../src/pages/Customers/customer";
 import Cards from "../src/pages/Cards/Cards";
 import Analytics from "../src/pages/Analytics/analytics";

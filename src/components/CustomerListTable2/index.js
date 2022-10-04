@@ -9,14 +9,12 @@ const CustomerListTable2 = ({ setShowUser }) => {
   const customerdetails = useSelector(
     (state) => state.CustomerDetails.CustomersdetailsData
   );
-  const customers = useSelector(
-    (state) => state.CustomerDetails.CustomersdetailsData
-  );
- 
+  // console.log(customerdetails[0]);
+  const phoneNo = customerdetails.map((i) =>i.phoneNo);
+  
 
   return (
     <div className='customer-list-table'>
-
       <table>
         <tr>
           <th>#</th>
@@ -35,7 +33,8 @@ const CustomerListTable2 = ({ setShowUser }) => {
                     setShowUser({});
                   }}
                 >
-                  <td>{item.id}</td>
+                  <td>{index + 1}</td>
+                  {/* <td>{item.id}</td> */}
                   <td className='identities'>
                     <img src={item.identity} alt='' /> {item.name}
                   </td>
@@ -43,7 +42,7 @@ const CustomerListTable2 = ({ setShowUser }) => {
                   <td>{item.username} </td>
                   <td>
                     {/* {item.gender} */}
-                   {item.status}
+                    {item.status}
                   </td>
                   <td>{item.localDateTime} </td>
                 </tr>

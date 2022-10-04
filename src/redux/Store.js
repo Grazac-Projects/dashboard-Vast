@@ -4,7 +4,8 @@ import admindata from './admin-data';
 import vastInfocards from './vast-infoCards';
 import vastchargesdata from './Vast-charges'
 import monowalletbalance from './Mono-wallet';
-import CustomerDetails from './Customer-details'
+import CustomerDetails from './Customer-details';
+import TansactionTableDetailsdata from './Transactiontable-details'
 
 export const Store = configureStore({
     reducer:{
@@ -12,7 +13,8 @@ export const Store = configureStore({
         vastInfocards:vastInfocards,
         vastchargesdata:vastchargesdata,
         monowalletbalance:monowalletbalance,
-        CustomerDetails:CustomerDetails
+        CustomerDetails:CustomerDetails,
+        TansactionTableDetailsdata:TansactionTableDetailsdata
         // activecards:activecards,
         
     },

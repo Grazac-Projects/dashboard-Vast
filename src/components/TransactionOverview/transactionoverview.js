@@ -2,7 +2,13 @@ import React from "react";
 import arrow from "../../assets/arrow.svg";
 import { figures } from "../../assets/Data";
 import "./transactionoverview.css";
-const transactionoverview = () => {
+// import { useSelector } from "react-redux";
+
+
+
+const Transactionoverview = () => {
+  
+// const transactionValues = useSelector((state)=>state.vastInfocards.vastcardinfoData);
   return (
     <div className="fullBox">
       <div className="filter">
@@ -40,4 +46,4 @@ const transactionoverview = () => {
   );
 };
 
-export default transactionoverview;
+export default Transactionoverview;

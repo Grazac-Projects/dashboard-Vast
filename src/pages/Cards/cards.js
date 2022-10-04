@@ -32,10 +32,23 @@ const Cards = () => {
     }
   };
 
- 
+  const getCardtable = async () => {
+   
+
+    try {
+      const cardsinfo = await axios.get(
+        "https://vast-app.herokuapp.com/api/v1/history/all/user/card"
+      );
+        console.log(cardsinfo)
+      
+      // dispatch(getCardData(cardsinfo.data.data.vastInfo));
+    } catch (e) {
+      console.log(e, "this is the error");
+    }
+  };
   useEffect(() => {
     getCardsData();
-    
+    getCardtable ();
   });
   
   return (

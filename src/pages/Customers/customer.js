@@ -23,8 +23,7 @@ const Customer = () => {
         const Allcustomers = await axios.get(
           "https://vast-app.herokuapp.com/api/v1/admin/users/data"
         );
-        // const userOne = Allcustomers.data.name;
-        // console.log(userOne)
+        
 
         dispatch(savecustomerData(Allcustomers.data.users));
       } catch (e) {
