@@ -21,17 +21,19 @@ const Account_top_up = () => {
               backgroundImage: `url(${item.pattern})`,
             }}
           >
-            <div>
-              <p className="title12">{item.title}</p>
-              <h3 className="rate1">{Accttopupcharges.accountTopUpCharges}</h3>
+            <div className="padding">
+              <div>
+                <p className="title12">{item.title}</p>
+                <h3 className="rate1">{Accttopupcharges.accountTopUpCharges}</h3>
+              </div>
+              <div onClick={handleclick}>
+                <button className="rate-box">
+                  <img src={editicon} alt="edit-rate-icon" />
+                  {item.edit}
+                </button>
+              </div>
             </div>
-            <div onClick={handleclick}>
-              <button className="rate-box">
-                <img src={editicon} alt="edit-rate-icon" />
-                {item.edit}
-              </button>
-            </div>
-            {modalShow && <Account_topup_Popup closeModal ={setModalShow} />}
+            {modalShow && <Account_topup_Popup closeModal={setModalShow} />}
           </div>
         );
       })}

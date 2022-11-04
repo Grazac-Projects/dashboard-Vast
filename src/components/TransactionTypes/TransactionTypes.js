@@ -8,19 +8,17 @@ import Account_top_up from "../Account_top_Up_Box/Account_top_up";
 import { useEffect } from "react";
 import axios from "axios";
 import { useDispatch } from "react-redux";
-import {getvastchargesData} from '../../redux/Vast-charges'
+import { getvastchargesData } from "../../redux/Vast-charges";
 
 const TransactionTypes = () => {
   const dispatch = useDispatch();
 
   const getchargedata = async () => {
-   
-
     try {
       const charges = await axios.get(
         "https://vast-app.herokuapp.com/api/v1/admin/get-vast-charges"
       );
-      // console.log(charges.data.data.charges);
+      console.log(charges.data.data.charges);
       // console.log(plenty.data.userDetailsForAdmin);
       dispatch(getvastchargesData(charges.data.data.charges));
     } catch (e) {
@@ -28,17 +26,14 @@ const TransactionTypes = () => {
     }
   };
 
- 
   useEffect(() => {
     getchargedata();
-    
   });
 
-
   return (
-    <div className="TransactionTypes-box">
-      <h6 className="type">TransactionTypes</h6>
-      <div className="transactiontype-fullbox">
+    <div className='TransactionTypes-box'>
+      <h6 className='type'>Transaction types</h6>
+      <div className='transactiontype-fullbox'>
         <Card_creation />
         <Vast_to_Vast />
         <Vast_to_Bank />

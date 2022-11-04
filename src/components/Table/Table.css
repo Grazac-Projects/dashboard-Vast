@@ -5,3 +5,36 @@
   align-items: center;
   border-top: 1px solid #DBE3EE;
 }
+.table-btn6{
+  background-color: #2BC155;
+  color:#fff;
+  border: none;
+  border-radius: 5px;
+}
+.table-btn3{
+  background-color: #C1972B;
+  border: none;
+  border-radius: 5px;
+  color:#fff;
+}
+.table-btn4{
+  background-color: #C12B2B;
+  color:#fff;
+  border: none;
+  border-radius: 5px;
+}
+.cardfunding{
+  color:#3484ED;
+}
+
+.debit{
+ color: #E31818;
+ background-color: #FFEBEB;
+ border: none;
+}
+.credit{
+  color:#2570E0;
+  background-color: 
+  #EBF0FF;
+  border: none;
+}

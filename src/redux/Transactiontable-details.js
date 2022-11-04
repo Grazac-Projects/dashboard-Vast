@@ -2,22 +2,23 @@ import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
   value: [],
-  TransactionTableData:'',
+  transactionData:'',
   
 };
 
-export const TansactionTableDetailsdata = createSlice({
-  name: "transactionTableDetails",
+export const TransactionTable = createSlice({
+  name: "transactiontable",
   initialState,
   reducers: {
-  getTranstableData: (state, action) => {
-      state.TransactionTableData=action.payload
+    transactionDetails: (state, action) => {
+     
+      state.transactionData = action.payload
     
     },
   },
 });
 
 // Action creators are generated for each case reducer function
-export const { getTranstableData } = TansactionTableDetailsdata.actions;
+export const { transactionDetails } = TransactionTable.actions;
 
-export default TansactionTableDetailsdata.reducer;
+export default TransactionTable.reducer;

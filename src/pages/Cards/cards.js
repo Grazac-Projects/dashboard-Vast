@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import { useDispatch } from "react-redux";
 import { getCardData } from "../../redux/vast-infoCards";
 import { useEffect } from "react";
+import { vastinfo } from "../../api/Cards";
 
 import axios from "axios";
 
@@ -16,21 +17,21 @@ import axios from "axios";
 const Cards = () => {
   const dispatch = useDispatch();
  
-  const getCardsData = async () => {
+  // const getCardsData = async () => {
    
 
-    try {
-      const cardsinfo = await axios.get(
-        "https://vast-app.herokuapp.com/api/v1/admin/vast-info"
-      );
-      // console.log(cardsinfo.data);
-      // console.log(cardsinfo.data.data.vastInfo);
-      // console.log(cardsinfo.data.data.vastInfo.totalCards)
-      dispatch(getCardData(cardsinfo.data.data.vastInfo));
-    } catch (e) {
-      console.log(e, "this is the error");
-    }
-  };
+  //   try {
+  //     const cardsinfo = await axios.get(
+  //       "https://vast-app.herokuapp.com/api/v1/admin/vast-info"
+  //     );
+  //     // console.log(cardsinfo.data);
+  //     // console.log(cardsinfo.data.data.vastInfo);
+  //     // console.log(cardsinfo.data.data.vastInfo.totalCards)
+  //     dispatch(getCardData(cardsinfo.data.data.vastInfo));
+  //   } catch (e) {
+  //     console.log(e, "this is the error");
+  //   }
+  // };
 
   const getCardtable = async () => {
    
@@ -47,7 +48,15 @@ const Cards = () => {
     }
   };
   useEffect(() => {
-    getCardsData();
+    (async () => {
+      
+      dispatch(getCardData(await vastinfo()));
+      
+    })();
+
+  });
+  useEffect(() => {
+   
     getCardtable ();
   });
   

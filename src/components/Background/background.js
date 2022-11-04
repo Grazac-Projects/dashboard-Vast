@@ -9,7 +9,7 @@ import "./background.css";
 const Background = () => {
   return (
     <div className="background">
-      <TransactionCharges link= {<Link to="/charges" >Transaction Charges</Link>} />
+      <TransactionCharges link= {<Link to="/charges" className="trans-text" >Transaction Charges</Link>} />
       <div className="Inner">
         <img src={Prof} alt="profile" />
         <div className="carter">

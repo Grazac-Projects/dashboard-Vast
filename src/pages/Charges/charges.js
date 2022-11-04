@@ -6,11 +6,23 @@ import { Link } from "react-router-dom";
 import { useEffect } from "react";
 import axios from 'axios'
 import TransactionTypes from "../../components/TransactionTypes/TransactionTypes";
+import { useDispatch } from "react-redux";
+import { getvastchargesData } from "../../redux/Vast-charges";
+import { getvastcharges } from "../../api/GetvastCharges";
 
 
 const Charges = () => {
   // const dispatch = useDispatch();
- 
+  const dispatch = useDispatch();
+  
+  useEffect(() => {
+    (async () => {
+      dispatch(getvastchargesData(await getvastcharges()));
+     
+    
+    })();
+
+  });
   
 
   return (

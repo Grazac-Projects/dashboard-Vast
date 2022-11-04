@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import Background from "../../components/Background/background";
 import EachOverview from "../../components/EachOverview/eachoverview";
 import TransactionOverview from "../../components/TransactionOverview/Transactionoverview";
@@ -7,46 +7,41 @@ import Table from "../../components/Table/Table";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import { useDispatch } from "react-redux";
+// import { saveData } from "../../redux/admin-data";
+import transactionDetails from '../../redux/Transactiontable-details'
+import { getTransactionHistory } from "../../api/Transactiondetails";
+
+// import Spiner from "../../components/Spiner";
 // import { useEffect } from 'react';
 
 function Transaction() {
-  // const dispatch = useDispatch();
-
-  const getTrantableData = async () => {
-    try {
-      const transTable = await axios.get(
-        "https://vast-app.herokuapp.com/api/v1/history/all",
-        {
-          withCredentials: true,
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Content-Type": "application/json",
-            // bearertoken:
-          },
-        }
-      );
-      console.log(transTable.data);
-
-      // dispatch(saveData(plenty.data.userDetailsForAdmin));
-    } catch (e) {
-      console.log(e, "this is the error");
-    }
-  };
-
+const [trasaction, setTransaction] = useState(false) 
   useEffect(() => {
-    getTrantableData();
-  });
+    (async () => {
+     let data = await getTransactionHistory()
+     setTransaction(data);
+    })();
+
+  },[])
+  
+
+
+
+  
+  
 
   return (
     <div>
       <Background />
       <EachOverview props='Transaction' text='Transaction Overview' />
       <TransactionOverview />
+      {/* <Spiner /> */}
       <ListHeader
         listType='Transaction List'
         link={<Link to='/transactionViewAll'>View All</Link>}
       />
-      <Table />
+     {/* {trasaction?  <Table data={trasaction}  />:} */}
+
     </div>
   );
 }

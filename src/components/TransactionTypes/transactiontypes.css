@@ -8,14 +8,14 @@
   /* z-index: -1; */
 }
 .TransactionTypes-box {
-  color: black; 
-background-color: white;
- border-radius: 10px;
- margin: auto;
- height: 65vh;
- width: 78vw;
- align-items: center;
- justify-content: center;
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  margin: auto;
+  height: 65vh;
+  width: 78vw;
+  align-items: center;
+  justify-content: center;
 }
 
 .TransactionTypes-card {
@@ -24,27 +24,30 @@ background-color: white;
   cursor: pointer;
   height: 160px;
   align-items: center;
-  gap: 1rem;
   justify-content: space-between;
   border: 1px solid transparent;
   border-radius: 10px;
-  padding: 0px 5px; 
   margin: auto;
   box-shadow: 0px 12px 23px rgba(62, 73, 84, 0.12);
-  width: calc(70vw/3);
-  
+  width: calc(70vw / 3);
 }
 
+.padding {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding: 0 12px;
+}
 
 .type {
   font-family: "Outfit";
   font-size: 20px;
   font-weight: 600;
   line-height: 26px;
-  letter-spacing: 0em;
-  text-align: left;
+  padding-left: 1rem;
+  padding-top: 1rem;
   color: rgba(87, 87, 87, 1);
-} 
+}
 .title12 {
   font-family: "Outfit";
   font-size: 20px;
@@ -59,7 +62,6 @@ background-color: white;
   font-weight: 700;
   line-height: 10px;
   color: rgba(255, 255, 255, 1);
-
 }
 
 .rate-box {
@@ -70,4 +72,4 @@ background-color: white;
   border: 1px solid transparent;
   height: 2rem;
   cursor: pointer;
-} 
+}

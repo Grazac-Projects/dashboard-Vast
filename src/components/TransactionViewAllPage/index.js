@@ -1,10 +1,21 @@
 import './index.css';
 import { FiSearch } from "react-icons/fi";
 import { IoIosArrowDown } from "react-icons/io";
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Table from '../Table/Table';
+import { getTransactionHistory } from '../../api/Transactiondetails';
 
-const TransactionViewAllPage = () => {
+const TransactionViewAllPage = ({ data }) => {
+  const [trasaction, setTransaction] = useState(false) 
+  useEffect(() => {
+    (async () => {
+     let data = await getTransactionHistory()
+     setTransaction(data);
+    })();
+
+  },[])
+  
+  // const [trasaction, setTransaction] = useState(false) ;
   return (
     <>
     <div className='customer-heading-main-all'>
@@ -18,7 +29,7 @@ const TransactionViewAllPage = () => {
     </div>
    
     </div>
-    <Table />
+    {trasaction?  <Table data={trasaction}  />:'loading'}
     </>
   )
 }

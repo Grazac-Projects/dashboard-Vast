@@ -23,17 +23,19 @@ const Card_creation = () => {
               backgroundImage: `url(${item.pattern})`,
             }}
           >
-            <div>
-              <p className="title12">{item.title}</p>
-              <h3 className="rate1">{creationcharges.cardCreationCharges}</h3>
+            <div className="padding">
+              <div>
+                <p className="title12">{item.title}</p>
+                <h3 className="rate1">{creationcharges.cardCreationCharges}</h3>
+              </div>
+              <div onClick={handleclick}>
+                <button className="rate-box">
+                  <img src={editicon} alt="edit-rate-icon" />
+                  {item.edit}
+                </button>
+              </div>
             </div>
-            <div onClick={handleclick}>
-              <button className="rate-box">
-                <img src={editicon} alt="edit-rate-icon" />
-                {item.edit}
-              </button>
-            </div>
-            {modalShow && <Card_Creation_Popup closeModal ={setModalShow} />}
+            {modalShow && <Card_Creation_Popup closeModal={setModalShow} />}
           </div>
         );
       })}

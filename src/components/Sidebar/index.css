@@ -9,7 +9,13 @@
   background-color: rgba(30, 30, 30, 1);
   height: 100vh;
 }
-
+.logoutlink{
+  color:#fff;
+  font-size: 16px;
+  font-weight: 500;
+  font-family: 'trap';
+  cursor: pointer;
+}
 main {
   display: block;
   width: 100%;

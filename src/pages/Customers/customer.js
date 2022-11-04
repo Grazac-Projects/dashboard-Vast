@@ -2,55 +2,84 @@
 // import ornament1 from "../../assets/Data/Ornament.png";
 // import ornament1 from "../../assets";
 import React, { useEffect } from "react";
+import {savecustomerData} from '../../redux/Customer-details'
+import { useDispatch } from "react-redux";
 import { useState } from "react";
+import axios from "axios";
 import { Link } from "react-router-dom";
 import CustomerDetails from "../../components/CustomerDetails/CustomerDetails";
 import Background from "../../components/Background/background";
 import ListHeader from "../../components/ListHeader/ListHeader";
 import EachOverview from "../../components/EachOverview/eachoverview";
-import CustomerOverview from "../../components/CustomerOverview/customeroverview";
+import CustomerOverview from "../../components/CustomerOverview/Customeroverview";
 import CustomerListTable2 from "../../components/CustomerListTable2";
-import { useDispatch } from "react-redux";
-import axios from 'axios';
-import {savecustomerData} from '../../redux/Customer-details'
+import { savecustomercardData } from "../../redux/customeruser";
+import { usersCount,usersdata } from "../../api/Customer";
+
 const Customer = () => {
  
- 
-    const dispatch = useDispatch();
+  const dispatch = useDispatch();
+
+  // const getcustomerData = async () => {
+  //   try {
+  //     const hit = await axios.get(
+  //       "https://vast-app.herokuapp.com/api/v1/admin/users/count"
+  //     );
+  //     console.log(hit.data);
+  //     // console.log(hit.data.userDetailsForAdmin);
+  //     dispatch(savecustomercardData(hit.data.userDetailsForAdmin));
+  //   } catch (e) {
+  //     console.log(e, "this is the error");
+  //   }
+  // };
+
+  // useEffect(() => {
+  //   getcustomerData();
+  // }, []);
   
-    const getcustomerDetails = async () => {
-      try {
-        const Allcustomers = await axios.get(
-          "https://vast-app.herokuapp.com/api/v1/admin/users/data"
-        );
+//     const getcustomerDetails = async () => {
+//       try {
+//         const Allcustomers = await axios.get(
+//           "https://vast-app.herokuapp.com/api/v1/admin/users/data"
+//         );
         
 
-        dispatch(savecustomerData(Allcustomers.data.users));
-      } catch (e) {
-        console.log(e, "this is the error");
-      }
-    };
-useEffect(()=>{
-  getcustomerDetails();
-}, [])
+//         dispatch(savecustomerData(Allcustomers.data.users));
+//       } catch (e) {
+//         console.log(e, "this is the error");
+//       }
+//     };
+// useEffect(()=>{
+//   getcustomerDetails();
+// }, [])
+
+
+  useEffect(() => {
+    (async () => {
+      
+      dispatch(savecustomercardData(await usersCount()));
+      dispatch(savecustomerData(await usersdata()));
+    })();
+
+  });
 
   const [isOverview, setIsOverview] = useState(false);
-  const [isShowUser, setShowUser] = useState('');
+  const [isShowUser, setShowUser] = useState("");
   const details = [
     {
-      id: 1,
-      bgColor: "#292D9D",
-      h4: "Customer Information",
+       id: 1,
+     bgColor: "#292D9D",
+       h4: "Customer Information",
       p: "Account Balance",
-      total: "$540.98",
-      firstname: "Deborah",
+       total: "$540.98",
+     firstname: "Deborah",
       lastname: "Dada",
       phonenumberss: "+234 807 3345 847",
       email: "shalomayokunnu@gmail.com",
       dob: "22-08-2000",
       gender: "Female",
-      bvn: 12278403477,
-      nin: 88843934945,
+     bvn: 12278403477,
+       nin: 88843934945,
     },
   ];
 
@@ -63,15 +92,17 @@ useEffect(()=>{
         setIsOverview={setIsOverview}
         isOverview={isOverview}
       />
-      {isOverview && <CustomerDetails detail={details} />}
+      {/* {isOverview && <CustomerDetails detail={details} />} */}
       {!isOverview && <CustomerOverview />}
 
-      <ListHeader setShowUser={setShowUser} listType='Customer List' link= {<Link to="/customerViewAll" >View All</Link>} />
-      <CustomerListTable2  />
+      <ListHeader
+        setShowUser={setShowUser}
+        listType="Customer List"
+        link={<Link to="/customerViewAll">View All</Link>}
+      />
+      <CustomerListTable2 />
     </div>
   );
 };
 
 export default Customer;
-
-
